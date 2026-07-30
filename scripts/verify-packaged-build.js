@@ -61,6 +61,7 @@ function assertIdentity(metadata, label) {
 function main() {
   const root = path.resolve(__dirname, '..');
   const archivePath = path.resolve(process.argv[2] || path.join(root, 'release/win-unpacked/resources/app.asar'));
+
   if (!fs.existsSync(archivePath)) {
     throw new Error(`Packaged app.asar was not found: ${archivePath}`);
   }
@@ -86,8 +87,8 @@ function main() {
     const packedBuffer = readPacked(archivePath, relativePath);
     const sourceSha256 = sha256(sourceBuffer);
     const packedSha256 = sha256(packedBuffer);
-    assertEqual(packedSha256, sourceSha256, `packaged hash for ${relativePath}`);
 
+    assertEqual(packedSha256, sourceSha256, `packaged hash for ${relativePath}`);
     verifiedFiles.push({
       path: relativePath,
       bytes: packedBuffer.length,
@@ -96,11 +97,9 @@ function main() {
   }
 
   const packedIndex = readPacked(archivePath, 'src/composer3/index.html').toString('utf8');
-  assertEqual(
-    packedIndex.includes(`${EXPECTED.appVersion} · Build ${EXPECTED.buildNumber}`),
-    true,
-    'packaged interface visible Build 60 identity'
-  );
+  if (!packedIndex.includes(`${EXPECTED.appVersion} · Build ${EXPECTED.buildNumber}`)) {
+    throw new Error('Packaged interface does not contain the visible Build 60 identity.');
+  }
 
   const controllerFiles = REQUIRED_PAYLOAD_FILES
     .filter(relativePath => /build(?:5[1-9]|60)-.+-controller\.js$/.test(relativePath))
@@ -124,7 +123,7 @@ function main() {
       version: packedPackage.version,
       main: packedPackage.main
     },
-    verifiedFileCount: verifiefFiles.length,
+    verifiedFileCount: verifiedFiles.length,
     verifiedFiles
   };
 
