@@ -33,6 +33,7 @@ test('Build 31 packages only the canonical Composer 3 application boundary', () 
     'src/core/**/*',
     'src/desktop/**/*',
     'assets/**/*',
+    'release-metadata.json',
     'package.json'
   ]);
 
@@ -40,7 +41,7 @@ test('Build 31 packages only the canonical Composer 3 application boundary', () 
     'src/ui',
     'src/main.js',
     'src/preload.js',
-    'src/bootstrap.js',
+     'src/bootstrap.js',
     'src/startup-guard.js'
   ]) {
     assert.equal(fs.existsSync(path.join(root, legacy)), false, `${legacy} must be absent`);
