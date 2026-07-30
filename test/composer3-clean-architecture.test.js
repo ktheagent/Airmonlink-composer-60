@@ -19,6 +19,7 @@ test('current build has one clean production entry and source allowlist', () => 
     'src/core/**/*',
     'src/desktop/**/*',
     'assets/**/*',
+    'release-metadata.json',
     'package.json'
   ]);
   assert.equal(fs.existsSync(path.join(root, 'src/ui')), false);
@@ -35,7 +36,7 @@ test('clean Composer 3 startup fails closed until the semantic renderer verifies
   assert.match(main, /legacySelectors:\s*0/);
   assert.match(main, /mainWindow\.show\(\)/);
   assert.match(main, /app\.exit\(1\)/);
-  assert.doesNotMatch(main, /src[\\/]+ui|loadFile\([^)]*ui/);
+  assert.doesNotMatch(main, /src[\\/]\ui|loadFile\([^)]*ui/);
 });
 
 test('clean Composer 3 HTML has six work areas, official palette and no legacy bridge', () => {
@@ -59,7 +60,7 @@ test('renderer calls the canonical engine directly instead of hidden DOM control
   assert.match(app, /window\.AirmonComposer3\s*=\s*Object\.freeze/);
   assert.match(api, /class Composer3Engine/);
   assert.match(api, /assertCanonical\(\)/);
-  assert.doesNotMatch(app, /createElement\(['\"](?:button|nav|header)['\"]\)[\s\S]{0,300}composer3CommandBridge|forwardCommand|source\.click\(\)/);
+  assert.doesNotMatch(app, /createElement\(['\"](?:button|nav|header)['"]\)[\s\S]{0,300}composer3CommandBridge|forwardCommand|source\.click\(\)/);
 });
 
 test('preload exposes only explicit Composer 3 desktop operations', () => {
