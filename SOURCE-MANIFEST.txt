@@ -11,8 +11,9 @@ Checkpoint SHA-256: 50864af0e30e21dca3ff6ca20a283019cdb7781ebb11f04054f42138c40e
 Checkpoint source commit: b1c94fe91ad28e27651bc3a882d7323a66f4a0ff
 Checkpoint file count: 355
 
-Detailed source inventory: Build60-Source-Manifest.json
+The verified checkpoint bundle contains the detailed per-file SHA-256 source inventory.
 Validation evidence: Build60-Validation-Report.json
+
 Restore verification: Build60-Restore-Verification.json
 
 Excluded generated paths:
