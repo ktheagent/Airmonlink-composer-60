@@ -1,0 +1,11 @@
+{
+  "productName": "Airmonlink Composer",
+  "productSlug": "Airmonlink-Composer",
+  "appVersion": "1.3.0",
+  "buildNumber": 60,
+  "buildVersion": "1.3.0.60",
+  "setupFile": "Airmonlink-Composer-1.3.0-Build60-Setup.exe",
+  "portableFile": "Airmonlink-Composer-1.3.0-Build60-Portable.exe",
+  "installDirectory": "AirmonlinkComposerBuild60",
+  "workflowName": "Build Windows Release"
+}

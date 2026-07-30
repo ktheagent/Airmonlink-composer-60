@@ -1,0 +1,92 @@
+{
+  "name": "airmonlink-composer",
+  "version": "1.3.0",
+  "description": "Airmonlink Composer - intelligent music notation, harmony and tonic sol-fa desktop application",
+  "main": "src/composer3/main.js",
+  "author": "Airmonlink",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "test": "node --test test/*.test.js",
+    "lint": "node scripts/lint.js",
+    "version:check": "node scripts/version-consistency.js",
+    "workflow:check": "node scripts/workflow-yaml-check.js",
+    "audit:stale": "node scripts/version-consistency.js --stale-only",
+    "validate": "npm run version:check && npm run workflow:check && npm run lint && npm test && npm run audit:release",
+    "pack": "electron-builder --dir",
+    "dist:win": "electron-builder --win nsis portable --x64 --publish never",
+    "preview": "node scripts/build-preview.js",
+    "browser-smoke": "node scripts/browser-validation.js browser",
+    "viewport-matrix": "node scripts/browser-validation.js viewport",
+    "performance": "node scripts/performance-audit.js",
+    "validate:full": "npm run validate && npm run performance && npm run preview && npm run browser-smoke && npm run viewport-matrix",
+    "audit:release": "node scripts/release-control-audit.js",
+    "gate:build59": "node test/build59-release-quality.test.js",
+    "gate:build60": "node --test test/build60-integrated-release-candidate.test.js"
+  },
+  "devDependencies": {
+    "electron": "^37.2.3",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.airmonlink.composer",
+    "productName": "Airmonlink Composer 3",
+    "buildVersion": "1.3.0.60",
+    "artifactName": "Airmonlink-Composer-${version}-Build60-${arch}.${ext}",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/composer3/**/*",
+      "src/core/**/*",
+      "src/desktop/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "Airmonlink-Composer-${version}-Build60-Setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "Airmonlink-Composer-${version}-Build60-Portable.${ext}"
+    },
+    "fileAssociations": [
+      {
+        "ext": "airscore",
+        "name": "Airmonlink Composer 3 Score",
+        "description": "Airmonlink Composer 3 editable score",
+        "role": "Editor",
+        "icon": "assets/icon.ico"
+      }
+    ]
+  },
+  "buildNumber": 60,
+  "buildVersion": "1.3.0.60",
+  "dependencies": {
+    "linkedom": "^0.18.12"
+  }
+}

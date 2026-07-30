@@ -1,0 +1,89 @@
+{
+  "product": "Airmonlink Composer",
+  "version": "1.3.0",
+  "build": 50,
+  "buildVersion": "1.3.0.50",
+  "status": "LOCALLY AUDITED SOURCE CHECKPOINT \u2014 WINDOWS RELEASE NOT VERIFIED",
+  "sourceCheckpoint": {
+    "originArchive": "Airmonlink-Composer-1.3.0-Build50-Audited-RC-Checkpoint.zip",
+    "originSha256": "d5b64e6988ed1bd5f4b7ecc33a717393b244ca73abf4a1406cddc74406b16599",
+    "originChecksumMatched": true
+  },
+  "validation": {
+    "versionConsistency": {
+      "status": "PASS"
+    },
+    "workflowYaml": {
+      "status": "PASS"
+    },
+    "javascriptLint": {
+      "status": "PASS",
+      "files": 108
+    },
+    "automatedTests": {
+      "status": "PASS",
+      "passed": 408,
+      "total": 408
+    },
+    "controlAudit": {
+      "status": "PASS",
+      "commands": 105,
+      "registered": 105,
+      "productionEnabled": 105
+    },
+    "performance": {
+      "status": "PASS",
+      "passed": 6,
+      "total": 6
+    },
+    "browser": {
+      "status": "PASS",
+      "passed": 71,
+      "total": 71
+    },
+    "viewport": {
+      "status": "PASS",
+      "passed": 36,
+      "total": 36,
+      "scenarios": 4
+    },
+    "wholeSystemCycles": {
+      "status": "PASS",
+      "passed": 3,
+      "total": 3
+    },
+    "preview": {
+      "status": "PASS",
+      "path": "Airmonlink-Composer-3-Preview.html"
+    },
+    "pdf": {
+      "status": "PASS",
+      "path": "validation/composer3-print.pdf"
+    },
+    "screenshots": {
+      "status": "PASS",
+      "paths": [
+        "validation/composer3-browser.png",
+        "validation/composer3-solfa.png"
+      ]
+    },
+    "cleanDependencyInstall": {
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "evidence": "validation/dependency-install.json"
+    }
+  },
+  "expectedWindowsFiles": [
+    "Airmonlink-Composer-1.3.0-Build50-Setup.exe",
+    "Airmonlink-Composer-1.3.0-Build50-Portable.exe"
+  ],
+  "notVerified": [
+    "Fresh Windows packaging from this modified checkpoint",
+    "Fresh install, first launch, save/reopen, export and uninstall on Windows",
+    "Upgrade and user-data preservation",
+    "Code signing and Windows reputation",
+    "Physical printer, MIDI and audio devices",
+    "Human assistive-technology and independent usability review",
+    "Final Windows artifact checksums and downloadable contents"
+  ],
+  "githubWritesPerformed": false
+}
