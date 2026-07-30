@@ -1,0 +1,2352 @@
+{
+  "product": "Airmonlink Composer 3",
+  "version": "1.2.3",
+  "buildNumber": 43,
+  "githubEmbargoStatus": "ACTIVE",
+  "createdUtc": "2026-07-28T03:05:43.068Z",
+  "scenarios": [
+    {
+      "scenario": {
+        "width": 1366,
+        "height": 768,
+        "scale": 1
+      },
+      "browser": {
+        "innerWidth": 1366,
+        "innerHeight": 629,
+        "devicePixelRatio": 1,
+        "app": {
+          "left": 0,
+          "right": 1366,
+          "top": 0,
+          "bottom": 629,
+          "width": 1366,
+          "height": 629
+        },
+        "area": {
+          "left": 304,
+          "right": 1366,
+          "top": 245.1875,
+          "bottom": 601,
+          "width": 1062,
+          "height": 355.8125
+        }
+      },
+      "checks": [
+        {
+          "name": "desktop shell remains inside viewport",
+          "status": "PASS",
+          "details": {
+            "innerWidth": 1366,
+            "innerHeight": 629,
+            "devicePixelRatio": 1,
+            "app": {
+              "left": 0,
+              "right": 1366,
+              "top": 0,
+              "bottom": 629,
+              "width": 1366,
+              "height": 629
+            },
+            "area": {
+              "left": 304,
+              "right": 1366,
+              "top": 245.1875,
+              "bottom": 601,
+              "width": 1062,
+              "height": 355.8125
+            }
+          }
+        },
+        {
+          "name": "Fit Width shows a complete page without horizontal workspace overflow",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1366,
+              "width": 1062
+            },
+            "page": {
+              "left": 343,
+              "right": 1326.983642578125,
+              "width": 983.983642578125,
+              "height": 1391.652099609375
+            },
+            "scrollWidth": 1032,
+            "clientWidth": 1032,
+            "zoom": 1.2397619047619046
+          }
+        },
+        {
+          "name": "Fit Page shows the complete portrait page",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1366,
+              "top": 245.1875,
+              "bottom": 601,
+              "width": 1062,
+              "height": 355.8125
+            },
+            "page": {
+              "left": 726,
+              "right": 943.7741088867188,
+              "top": 269.1875,
+              "bottom": 577.1864013671875,
+              "width": 217.77410888671875,
+              "height": 307.9989013671875
+            },
+            "zoom": 0.2743827160493827
+          }
+        },
+        {
+          "name": "Continuous mode casts a long score onto multiple physical pages",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.2743827160493827,
+            "pageLayoutMode": "continuous",
+            "currentPage": 1,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.2743827160493827,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 1,
+                    "withinY": 0.427922077922078,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "continuous",
+              "zoom": 0.2743827160493827,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 1,
+                  "x": 0,
+                  "y": 340,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 680,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 3,
+                  "x": 0,
+                  "y": 1020,
+                  "width": 217.77777777777777,
+                  "height": 308
+                }
+              ],
+              "extent": {
+                "width": 217.77777777777777,
+                "height": 1328
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Piano dock resize preserves the current musical page",
+          "status": "PASS",
+          "details": {
+            "before": {
+              "page": 3,
+              "top": 704,
+              "index": 2
+            },
+            "withDock": 3,
+            "afterDock": 3
+          }
+        },
+        {
+          "name": "Spread mode creates two-page rows",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.2743827160493827,
+            "pageLayoutMode": "spread",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.2743827160493827,
+                  "layoutMode": "spread",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 3,
+                    "withinX": 1,
+                    "withinY": 0.35000000000000003,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "spread",
+              "zoom": 0.2743827160493827,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 1,
+                  "x": 249.77777777777777,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 340,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 3,
+                  "x": 249.77777777777777,
+                  "y": 340,
+                  "width": 217.77777777777777,
+                  "height": 308
+                }
+              ],
+              "extent": {
+                "width": 467.55555555555554,
+                "height": 648
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Horizontal mode places pages on one horizontal sequence",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.2743827160493827,
+            "pageLayoutMode": "horizontal",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.2743827160493827,
+                  "layoutMode": "horizontal",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 2,
+                    "withinX": 0,
+                    "withinY": 0.35,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "horizontal",
+              "zoom": 0.2743827160493827,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 1,
+                  "x": 249.77777777777777,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 2,
+                  "x": 499.55555555555554,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                },
+                {
+                  "index": 3,
+                  "x": 749.3333333333333,
+                  "y": 0,
+                  "width": 217.77777777777777,
+                  "height": 308
+                }
+              ],
+              "extent": {
+                "width": 967.1111111111111,
+                "height": 308
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Tonic Sol-fa uses the same complete-page Fit Width system",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1366
+            },
+            "page": {
+              "left": 343,
+              "right": 1326.983642578125,
+              "width": 983.983642578125,
+              "height": 1391.652099609375
+            },
+            "pageCount": 1
+          }
+        },
+        {
+          "name": "Staff and Sol-fa retain independent zoom and page modes",
+          "status": "PASS",
+          "details": {
+            "staff": {
+              "pageLayoutMode": "spread",
+              "zoomMode": "page"
+            },
+            "solfa": {
+              "pageLayoutMode": "horizontal",
+              "zoomMode": "width"
+            }
+          }
+        }
+      ],
+      "screenshot": "build43-viewport-1366x768-1x.png",
+      "status": "PASS"
+    },
+    {
+      "scenario": {
+        "width": 1366,
+        "height": 768,
+        "scale": 1.25
+      },
+      "browser": {
+        "innerWidth": 1367,
+        "innerHeight": 631,
+        "devicePixelRatio": 1.25,
+        "app": {
+          "left": 0,
+          "right": 1367.2000732421875,
+          "top": 0,
+          "bottom": 631.2000122070312,
+          "width": 1367.2000732421875,
+          "height": 631.2000122070312
+        },
+        "area": {
+          "left": 304,
+          "right": 1367.2000732421875,
+          "top": 244.60000610351562,
+          "bottom": 603.2000122070312,
+          "width": 1063.2000732421875,
+          "height": 358.6000061035156
+        }
+      },
+      "checks": [
+        {
+          "name": "desktop shell remains inside viewport",
+          "status": "PASS",
+          "details": {
+            "innerWidth": 1367,
+            "innerHeight": 631,
+            "devicePixelRatio": 1.25,
+            "app": {
+              "left": 0,
+              "right": 1367.2000732421875,
+              "top": 0,
+              "bottom": 631.2000122070312,
+              "width": 1367.2000732421875,
+              "height": 631.2000122070312
+            },
+            "area": {
+              "left": 304,
+              "right": 1367.2000732421875,
+              "top": 244.60000610351562,
+              "bottom": 603.2000122070312,
+              "width": 1063.2000732421875,
+              "height": 358.6000061035156
+            }
+          }
+        },
+        {
+          "name": "Fit Width shows a complete page without horizontal workspace overflow",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1367.2000732421875,
+              "width": 1063.2000732421875
+            },
+            "page": {
+              "left": 343.20001220703125,
+              "right": 1328.1990356445312,
+              "width": 984.9990234375,
+              "height": 1393.0626220703125
+            },
+            "scrollWidth": 1033,
+            "clientWidth": 1033,
+            "zoom": 1.2410218253968253
+          }
+        },
+        {
+          "name": "Fit Page shows the complete portrait page",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1367.2000732421875,
+              "top": 244.60000610351562,
+              "bottom": 603.2000122070312,
+              "width": 1063.2000732421875,
+              "height": 358.6000061035156
+            },
+            "page": {
+              "left": 725.6000366210938,
+              "right": 945.4987640380859,
+              "top": 267.8000183105469,
+              "bottom": 578.7980346679688,
+              "width": 219.8987274169922,
+              "height": 310.9980163574219
+            },
+            "zoom": 0.2770552749719416
+          }
+        },
+        {
+          "name": "Continuous mode casts a long score onto multiple physical pages",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.2770552749719416,
+            "pageLayoutMode": "continuous",
+            "currentPage": 1,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.2770552749719416,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 1,
+                    "withinY": 0.42717041800643085,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "continuous",
+              "zoom": 0.2770552749719416,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 1,
+                  "x": 0,
+                  "y": 343,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 686,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 3,
+                  "x": 0,
+                  "y": 1029,
+                  "width": 219.8989898989899,
+                  "height": 311
+                }
+              ],
+              "extent": {
+                "width": 219.8989898989899,
+                "height": 1340
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Piano dock resize preserves the current musical page",
+          "status": "PASS",
+          "details": {
+            "before": {
+              "page": 3,
+              "top": 710.4000244140625,
+              "index": 2
+            },
+            "withDock": 3,
+            "afterDock": 3
+          }
+        },
+        {
+          "name": "Spread mode creates two-page rows",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.2770552749719416,
+            "pageLayoutMode": "spread",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.2770552749719416,
+                  "layoutMode": "spread",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 3,
+                    "withinX": 1,
+                    "withinY": 0.35321543408360134,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "spread",
+              "zoom": 0.2770552749719416,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 1,
+                  "x": 251.8989898989899,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 343,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 3,
+                  "x": 251.8989898989899,
+                  "y": 343,
+                  "width": 219.8989898989899,
+                  "height": 311
+                }
+              ],
+              "extent": {
+                "width": 471.7979797979798,
+                "height": 654
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Horizontal mode places pages on one horizontal sequence",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.2770552749719416,
+            "pageLayoutMode": "horizontal",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.2770552749719416,
+                  "layoutMode": "horizontal",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 2,
+                    "withinX": 0,
+                    "withinY": 0.35,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "horizontal",
+              "zoom": 0.2770552749719416,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 1,
+                  "x": 251.8989898989899,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 2,
+                  "x": 503.7979797979798,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                },
+                {
+                  "index": 3,
+                  "x": 755.6969696969697,
+                  "y": 0,
+                  "width": 219.8989898989899,
+                  "height": 311
+                }
+              ],
+              "extent": {
+                "width": 975.5959595959596,
+                "height": 311
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Tonic Sol-fa uses the same complete-page Fit Width system",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1367.2000732421875
+            },
+            "page": {
+              "left": 343.20001220703125,
+              "right": 1328.1990356445312,
+              "width": 984.9990234375,
+              "height": 1393.0626220703125
+            },
+            "pageCount": 1
+          }
+        },
+        {
+          "name": "Staff and Sol-fa retain independent zoom and page modes",
+          "status": "PASS",
+          "details": {
+            "staff": {
+              "pageLayoutMode": "spread",
+              "zoomMode": "page"
+            },
+            "solfa": {
+              "pageLayoutMode": "horizontal",
+              "zoomMode": "width"
+            }
+          }
+        }
+      ],
+      "screenshot": "build43-viewport-1366x768-1_25x.png",
+      "status": "PASS"
+    },
+    {
+      "scenario": {
+        "width": 1920,
+        "height": 1080,
+        "scale": 1
+      },
+      "browser": {
+        "innerWidth": 1920,
+        "innerHeight": 941,
+        "devicePixelRatio": 1,
+        "app": {
+          "left": 0,
+          "right": 1920,
+          "top": 0,
+          "bottom": 941,
+          "width": 1920,
+          "height": 941
+        },
+        "area": {
+          "left": 304,
+          "right": 1920,
+          "top": 245.1875,
+          "bottom": 913,
+          "width": 1616,
+          "height": 667.8125
+        }
+      },
+      "checks": [
+        {
+          "name": "desktop shell remains inside viewport",
+          "status": "PASS",
+          "details": {
+            "innerWidth": 1920,
+            "innerHeight": 941,
+            "devicePixelRatio": 1,
+            "app": {
+              "left": 0,
+              "right": 1920,
+              "top": 0,
+              "bottom": 941,
+              "width": 1920,
+              "height": 941
+            },
+            "area": {
+              "left": 304,
+              "right": 1920,
+              "top": 245.1875,
+              "bottom": 913,
+              "width": 1616,
+              "height": 667.8125
+            }
+          }
+        },
+        {
+          "name": "Fit Width shows a complete page without horizontal workspace overflow",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1920,
+              "width": 1616
+            },
+            "page": {
+              "left": 343,
+              "right": 1880.9742431640625,
+              "width": 1537.9742431640625,
+              "height": 2175.16357421875
+            },
+            "scrollWidth": 1586,
+            "clientWidth": 1586,
+            "zoom": 1.9377579365079363
+          }
+        },
+        {
+          "name": "Fit Page shows the complete portrait page",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1920,
+              "top": 245.1875,
+              "bottom": 913,
+              "width": 1616,
+              "height": 667.8125
+            },
+            "page": {
+              "left": 892.5,
+              "right": 1330.87646484375,
+              "top": 269.1875,
+              "bottom": 889.1852416992188,
+              "width": 438.37646484375,
+              "height": 619.9977416992188
+            },
+            "zoom": 0.5523288439955106
+          }
+        },
+        {
+          "name": "Continuous mode casts a long score onto multiple physical pages",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.5523288439955106,
+            "pageLayoutMode": "continuous",
+            "currentPage": 1,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.5523288439955106,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 1,
+                    "withinY": 0.38870967741935486,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "continuous",
+              "zoom": 0.5523288439955106,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 438.3838383838384,
+                  "height": 620
+                },
+                {
+                  "index": 1,
+                  "x": 0,
+                  "y": 652,
+                  "width": 438.3838383838384,
+                  "height": 620
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 1304,
+                  "width": 438.3838383838384,
+                  "height": 620
+                },
+                {
+                  "index": 3,
+                  "x": 0,
+                  "y": 1956,
+                  "width": 438.3838383838384,
+                  "height": 620
+                }
+              ],
+              "extent": {
+                "width": 438.3838383838384,
+                "height": 2576
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Piano dock resize preserves the current musical page",
+          "status": "PASS",
+          "details": {
+            "before": {
+              "page": 3,
+              "top": 1328,
+              "index": 2
+            },
+            "withDock": 3,
+            "afterDock": 3
+          }
+        },
+        {
+          "name": "Spread mode creates two-page rows",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.5523288439955106,
+            "pageLayoutMode": "spread",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.5523288439955106,
+                  "layoutMode": "spread",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 3,
+                    "withinX": 0.6811751152073733,
+                    "withinY": 0.35,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "spread",
+              "zoom": 0.5523288439955106,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 438.3838383838384,
+                  "height": 620
+                },
+                {
+                  "index": 1,
+                  "x": 470.3838383838384,
+                  "y": 0,
+                  "width": 438.3838383838384,
+                  "height": 620
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 652,
+                  "width": 438.3838383838384,
+                  "height": 620
+                },
+                {
+                  "index": 3,
+                  "x": 470.3838383838384,
+                  "y": 652,
+                  "width": 438.3838383838384,
+                  "height": 620
+                }
+              ],
+              "extent": {
+                "width": 908.7676767676768,
+                "height": 1272
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Horizontal mode places pages on one horizontal sequence",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.538966049382716,
+            "pageLayoutMode": "horizontal",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.538966049382716,
+                  "layoutMode": "horizontal",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 2,
+                    "withinX": 0.15298701298701303,
+                    "withinY": 0.35,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "horizontal",
+              "zoom": 0.538966049382716,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 427.77777777777777,
+                  "height": 605
+                },
+                {
+                  "index": 1,
+                  "x": 459.77777777777777,
+                  "y": 0,
+                  "width": 427.77777777777777,
+                  "height": 605
+                },
+                {
+                  "index": 2,
+                  "x": 919.5555555555555,
+                  "y": 0,
+                  "width": 427.77777777777777,
+                  "height": 605
+                },
+                {
+                  "index": 3,
+                  "x": 1379.3333333333333,
+                  "y": 0,
+                  "width": 427.77777777777777,
+                  "height": 605
+                }
+              ],
+              "extent": {
+                "width": 1807.111111111111,
+                "height": 605
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Tonic Sol-fa uses the same complete-page Fit Width system",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1920
+            },
+            "page": {
+              "left": 343,
+              "right": 1880.9742431640625,
+              "width": 1537.9742431640625,
+              "height": 2175.16357421875
+            },
+            "pageCount": 1
+          }
+        },
+        {
+          "name": "Staff and Sol-fa retain independent zoom and page modes",
+          "status": "PASS",
+          "details": {
+            "staff": {
+              "pageLayoutMode": "spread",
+              "zoomMode": "page"
+            },
+            "solfa": {
+              "pageLayoutMode": "horizontal",
+              "zoomMode": "width"
+            }
+          }
+        }
+      ],
+      "screenshot": "build43-viewport-1920x1080-1x.png",
+      "status": "PASS"
+    },
+    {
+      "scenario": {
+        "width": 1920,
+        "height": 1080,
+        "scale": 1.5
+      },
+      "browser": {
+        "innerWidth": 1920,
+        "innerHeight": 941,
+        "devicePixelRatio": 1.5,
+        "app": {
+          "left": 0,
+          "right": 1920,
+          "top": 0,
+          "bottom": 941.3333740234375,
+          "width": 1920,
+          "height": 941.3333740234375
+        },
+        "area": {
+          "left": 304,
+          "right": 1920,
+          "top": 243.52084350585938,
+          "bottom": 913.3333435058594,
+          "width": 1616,
+          "height": 669.8125
+        }
+      },
+      "checks": [
+        {
+          "name": "desktop shell remains inside viewport",
+          "status": "PASS",
+          "details": {
+            "innerWidth": 1920,
+            "innerHeight": 941,
+            "devicePixelRatio": 1.5,
+            "app": {
+              "left": 0,
+              "right": 1920,
+              "top": 0,
+              "bottom": 941.3333740234375,
+              "width": 1920,
+              "height": 941.3333740234375
+            },
+            "area": {
+              "left": 304,
+              "right": 1920,
+              "top": 243.52084350585938,
+              "bottom": 913.3333435058594,
+              "width": 1616,
+              "height": 669.8125
+            }
+          }
+        },
+        {
+          "name": "Fit Width shows a complete page without horizontal workspace overflow",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1920,
+              "width": 1616
+            },
+            "page": {
+              "left": 343.5,
+              "right": 1880.4945068359375,
+              "width": 1536.9945068359375,
+              "height": 2173.7392578125
+            },
+            "scrollWidth": 1585,
+            "clientWidth": 1585,
+            "zoom": 1.9364980158730156
+          }
+        },
+        {
+          "name": "Fit Page shows the complete portrait page",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1920,
+              "top": 243.52084350585938,
+              "bottom": 913.3333435058594,
+              "width": 1616,
+              "height": 669.8125
+            },
+            "page": {
+              "left": 892,
+              "right": 1331.79638671875,
+              "top": 267.5208435058594,
+              "bottom": 889.5156555175781,
+              "width": 439.79638671875,
+              "height": 621.9948120117188
+            },
+            "zoom": 0.5541105499438832
+          }
+        },
+        {
+          "name": "Continuous mode casts a long score onto multiple physical pages",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.5541105499438832,
+            "pageLayoutMode": "continuous",
+            "currentPage": 1,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.5541105499438832,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 1,
+                    "withinY": 0.3885852090032154,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "continuous",
+              "zoom": 0.5541105499438832,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 439.7979797979798,
+                  "height": 622
+                },
+                {
+                  "index": 1,
+                  "x": 0,
+                  "y": 654,
+                  "width": 439.7979797979798,
+                  "height": 622
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 1308,
+                  "width": 439.7979797979798,
+                  "height": 622
+                },
+                {
+                  "index": 3,
+                  "x": 0,
+                  "y": 1962,
+                  "width": 439.7979797979798,
+                  "height": 622
+                }
+              ],
+              "extent": {
+                "width": 439.7979797979798,
+                "height": 2584
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Piano dock resize preserves the current musical page",
+          "status": "PASS",
+          "details": {
+            "before": {
+              "page": 3,
+              "top": 1332,
+              "index": 2
+            },
+            "withDock": 3,
+            "afterDock": 3
+          }
+        },
+        {
+          "name": "Spread mode creates two-page rows",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.5541105499438832,
+            "pageLayoutMode": "spread",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.5541105499438832,
+                  "layoutMode": "spread",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 3,
+                    "withinX": 0.674632521819017,
+                    "withinY": 0.3500000000000001,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "spread",
+              "zoom": 0.5541105499438832,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 439.7979797979798,
+                  "height": 622
+                },
+                {
+                  "index": 1,
+                  "x": 471.7979797979798,
+                  "y": 0,
+                  "width": 439.7979797979798,
+                  "height": 622
+                },
+                {
+                  "index": 2,
+                  "x": 0,
+                  "y": 654,
+                  "width": 439.7979797979798,
+                  "height": 622
+                },
+                {
+                  "index": 3,
+                  "x": 471.7979797979798,
+                  "y": 654,
+                  "width": 439.7979797979798,
+                  "height": 622
+                }
+              ],
+              "extent": {
+                "width": 911.5959595959596,
+                "height": 1276
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Horizontal mode places pages on one horizontal sequence",
+          "status": "PASS",
+          "details": {
+            "activeView": "staff",
+            "zoomMode": "page",
+            "zoom": 0.5398569023569023,
+            "pageLayoutMode": "horizontal",
+            "currentPage": 3,
+            "pageCount": 4,
+            "session": {
+              "schemaVersion": 1,
+              "activeView": "staff",
+              "views": {
+                "staff": {
+                  "zoomMode": "page",
+                  "zoom": 0.5398569023569023,
+                  "layoutMode": "horizontal",
+                  "currentPage": 2,
+                  "anchor": {
+                    "pageIndex": 2,
+                    "withinX": 0.15293493635077787,
+                    "withinY": 0.35,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                },
+                "solfa": {
+                  "zoomMode": "actual",
+                  "zoom": 1,
+                  "layoutMode": "continuous",
+                  "currentPage": 0,
+                  "anchor": {
+                    "pageIndex": 0,
+                    "withinX": 0.5,
+                    "withinY": 0.15,
+                    "viewportX": 0.5,
+                    "viewportY": 0.35
+                  }
+                }
+              }
+            },
+            "layout": {
+              "mode": "horizontal",
+              "zoom": 0.5398569023569023,
+              "gap": 32,
+              "page": {
+                "width": 793.7007874015749,
+                "height": 1122.5196850393702
+              },
+              "pages": [
+                {
+                  "index": 0,
+                  "x": 0,
+                  "y": 0,
+                  "width": 428.4848484848485,
+                  "height": 606
+                },
+                {
+                  "index": 1,
+                  "x": 460.4848484848485,
+                  "y": 0,
+                  "width": 428.4848484848485,
+                  "height": 606
+                },
+                {
+                  "index": 2,
+                  "x": 920.969696969697,
+                  "y": 0,
+                  "width": 428.4848484848485,
+                  "height": 606
+                },
+                {
+                  "index": 3,
+                  "x": 1381.4545454545455,
+                  "y": 0,
+                  "width": 428.4848484848485,
+                  "height": 606
+                }
+              ],
+              "extent": {
+                "width": 1809.939393939394,
+                "height": 606
+              }
+            },
+            "pageRanges": [
+              {
+                "pageIndex": 0,
+                "startBeat": 0,
+                "endBeat": 112,
+                "firstMeasure": 0,
+                "lastMeasure": 28,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 1,
+                "startBeat": 112,
+                "endBeat": 224,
+                "firstMeasure": 28,
+                "lastMeasure": 56,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 2,
+                "startBeat": 224,
+                "endBeat": 336,
+                "firstMeasure": 56,
+                "lastMeasure": 84,
+                "eventIds": []
+              },
+              {
+                "pageIndex": 3,
+                "startBeat": 336,
+                "endBeat": 384,
+                "firstMeasure": 84,
+                "lastMeasure": 96,
+                "eventIds": []
+              }
+            ],
+            "publication": {
+              "view": "staff",
+              "pageSize": "A4",
+              "orientation": "portrait",
+              "margins": 15,
+              "pageCount": 4,
+              "measureRanges": [
+                [
+                  0,
+                  28
+                ],
+                [
+                  28,
+                  56
+                ],
+                [
+                  56,
+                  84
+                ],
+                [
+                  84,
+                  96
+                ]
+              ],
+              "signature": "staff|A4|portrait|15|4|0-28,28-56,56-84,84-96"
+            }
+          }
+        },
+        {
+          "name": "Tonic Sol-fa uses the same complete-page Fit Width system",
+          "status": "PASS",
+          "details": {
+            "area": {
+              "left": 304,
+              "right": 1920
+            },
+            "page": {
+              "left": 343.5,
+              "right": 1880.4945068359375,
+              "width": 1536.9945068359375,
+              "height": 2173.7392578125
+            },
+            "pageCount": 1
+          }
+        },
+        {
+          "name": "Staff and Sol-fa retain independent zoom and page modes",
+          "status": "PASS",
+          "details": {
+            "staff": {
+              "pageLayoutMode": "spread",
+              "zoomMode": "page"
+            },
+            "solfa": {
+              "pageLayoutMode": "horizontal",
+              "zoomMode": "width"
+            }
+          }
+        }
+      ],
+      "screenshot": "build43-viewport-1920x1080-1_5x.png",
+      "status": "PASS"
+    }
+  ],
+  "checks": 36,
+  "passed": 36,
+  "status": "PASS"
+}

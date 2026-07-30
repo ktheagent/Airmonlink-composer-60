@@ -1,0 +1,21 @@
+{
+  "build": 55,
+  "status": "PASS",
+  "commitBeforeCheckpoint": "ab4f46d4ac55c78b455d36b41b3b9086e9908862",
+  "gate": "npm run gate:build55",
+  "evidence": {
+    "lint": "validation/performance-report.json plus npm gate log",
+    "browser": "PASS",
+    "browserChecks": 75,
+    "viewport": "PASS",
+    "viewportChecks": 36,
+    "unitTests": 449
+  },
+  "requirements": [
+    "contextual inspector",
+    "searchable/favourite/recent/custom palettes",
+    "Composition Hub registry parity",
+    "voice 1-4 identity/customisation",
+    "professional black publication"
+  ]
+}

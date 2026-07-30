@@ -1,0 +1,7 @@
+{
+  "command": "npm ci --no-audit --no-fund --registry=https://registry.npmjs.org",
+  "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+  "exitCode": 124,
+  "evidence": "Dependency installation could not resolve the public npm registry in the local sandbox and was terminated after the bounded timeout. Source tests use the bundled XML fallback; the GitHub workflow still performs npm ci on a networked runner.",
+  "generatedAt": "2026-07-30T01:40:46Z"
+}

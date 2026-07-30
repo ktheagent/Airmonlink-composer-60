@@ -1,0 +1,402 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Composer 3 mounted",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Canonical semantic model",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "Direct engine API",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "Exactly four voice layers",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "No legacy selectors",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "Six work-area tabs",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "One active panel",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "Visible score viewport",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "All commands connected",
+      "status": "PASS",
+      "details": "{\"build\":60,\"mounted\":true,\"tabs\":6,\"activePanels\":1,\"legacySelectors\":0,\"visibleControls\":456,\"scoreViewport\":true,\"physicalPageService\":true,\"crossPageFlowService\":true,\"publicationProfile\":\"staff|A4|portrait|15|1|0-8\",\"commandGroups\":22,\"allControlsConnected\":true,\"canonicalModel\":true,\"directApi\":true,\"fourVoiceLayers\":true,\"independentModels\":0,\"partCount\":1,\"measureCount\":8,\"eventCount\":32,\"fourLayerPlayback\":true,\"midiModes\":true}"
+    },
+    {
+      "name": "Window shell and score workspace stay inside the viewport",
+      "status": "PASS",
+      "details": "{\"innerWidth\":1600,\"areaLeft\":250,\"areaRight\":1316,\"areaWidth\":1066,\"shellRight\":1600,\"shellWidth\":1600}"
+    },
+    {
+      "name": "Build 52 semantic New Score wizard is interactive",
+      "status": "PASS",
+      "details": "{\"available\":true,\"open\":true,\"templates\":18,\"search\":true,\"setup\":true}"
+    },
+    {
+      "name": "Build 53 direct professional note entry is interactive",
+      "status": "PASS",
+      "details": "{\"available\":true,\"enabled\":true,\"group\":true,\"modes\":true,\"pianoKeys\":25,\"guide\":true,\"staffGeometry\":true}"
+    },
+    {
+      "name": "Build 54 humane rhythmic safety feedback is interactive",
+      "status": "PASS",
+      "details": "{\"available\":true,\"visible\":true,\"human\":true,\"bottom\":true,\"coversScore\":false}"
+    },
+    {
+      "name": "Build 55 inspector, voice identity and custom palettes are interactive",
+      "status": "PASS",
+      "details": "{\"available\":true,\"colours\":4,\"customPalette\":true,\"activeVoice\":\"3\",\"contextual\":true,\"audit\":\"pass\"}"
+    },
+    {
+      "name": "Build 56 professional engraving and print sanitisation are interactive",
+      "status": "PASS",
+      "details": "{\"available\":true,\"printProjection\":1,\"layout\":true,\"offsets\":[]}"
+    },
+    {
+      "name": "Build 57 Staff, Sol-fa and lyrics share an interactive synchronized view",
+      "status": "PASS",
+      "details": "{\"available\":true,\"mode\":\"split\",\"buttons\":3,\"split\":true,\"status\":\"Staff, Sol-fa and lyrics synchronized\"}"
+    },
+    {
+      "name": "All five workspace modes are visible and activate their real work areas",
+      "status": "PASS",
+      "details": "[{\"mode\":\"setup\",\"visible\":true,\"pressed\":true,\"tabSelected\":true,\"panelVisible\":true},{\"mode\":\"write\",\"visible\":true,\"pressed\":true,\"tabSelected\":true,\"panelVisible\":true},{\"mode\":\"engrave\",\"visible\":true,\"pressed\":true,\"tabSelected\":true,\"panelVisible\":true},{\"mode\":\"play\",\"visible\":true,\"pressed\":true,\"tabSelected\":true,\"panelVisible\":true},{\"mode\":\"publish\",\"visible\":true,\"pressed\":true,\"tabSelected\":true,\"panelVisible\":true}]"
+    },
+    {
+      "name": "Composition Hub is visible, populated, openable and closable",
+      "status": "PASS",
+      "details": "{\"launcherVisible\":true,\"opened\":true,\"toolCount\":5,\"closed\":true}"
+    },
+    {
+      "name": "Note command changes canonical score",
+      "status": "PASS",
+      "details": "before=32;after=33"
+    },
+    {
+      "name": "Independent Voice 2 entry",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Build 42 keypad performs safe tied barline entry",
+      "status": "PASS",
+      "details": "{\"before\":2,\"after\":4,\"entered\":[{\"start\":3,\"duration\":1,\"tieStart\":true,\"tieStop\":false},{\"start\":4,\"duration\":1,\"tieStart\":false,\"tieStop\":true}],\"tie\":true,\"cursor\":5,\"activeDuration\":\"2\",\"activeVoice\":\"1\",\"caret\":true}"
+    },
+    {
+      "name": "Build 42 keypad mirrors active duration and voice",
+      "status": "PASS",
+      "details": "{\"before\":2,\"after\":4,\"entered\":[{\"start\":3,\"duration\":1,\"tieStart\":true,\"tieStop\":false},{\"start\":4,\"duration\":1,\"tieStart\":false,\"tieStop\":true}],\"tie\":true,\"cursor\":5,\"activeDuration\":\"2\",\"activeVoice\":\"1\",\"caret\":true}"
+    },
+    {
+      "name": "Build 42 renders a visible insertion caret",
+      "status": "PASS",
+      "details": "{\"before\":2,\"after\":4,\"entered\":[{\"start\":3,\"duration\":1,\"tieStart\":true,\"tieStop\":false},{\"start\":4,\"duration\":1,\"tieStart\":false,\"tieStop\":true}],\"tie\":true,\"cursor\":5,\"activeDuration\":\"2\",\"activeVoice\":\"1\",\"caret\":true}"
+    },
+    {
+      "name": "Build 42 chord entry uses one onset and rejects duplicate pitch",
+      "status": "PASS",
+      "details": "{\"pitches\":[\"C4\",\"E4\"],\"beforeDuplicate\":6,\"afterDuplicate\":6,\"recoverableStatus\":\"Rest entered · next bar 3, beat 3\",\"persistentErrorVisible\":false,\"cursor\":10,\"restAtNine\":true}"
+    },
+    {
+      "name": "Build 42 recoverable input error does not leave a persistent failure banner",
+      "status": "PASS",
+      "details": "{\"pitches\":[\"C4\",\"E4\"],\"beforeDuplicate\":6,\"afterDuplicate\":6,\"recoverableStatus\":\"Rest entered · next bar 3, beat 3\",\"persistentErrorVisible\":false,\"cursor\":10,\"restAtNine\":true}"
+    },
+    {
+      "name": "Build 42 rest keypad advances the same staff caret",
+      "status": "PASS",
+      "details": "{\"pitches\":[\"C4\",\"E4\"],\"beforeDuplicate\":6,\"afterDuplicate\":6,\"recoverableStatus\":\"Rest entered · next bar 3, beat 3\",\"persistentErrorVisible\":false,\"cursor\":10,\"restAtNine\":true}"
+    },
+    {
+      "name": "Complete score setup command applies template, key, meter and pickup",
+      "status": "PASS",
+      "details": "{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1}"
+    },
+    {
+      "name": "Part add, edit and remove commands mutate the authoritative score",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Clipboard paste and voice-layer copy create semantic events",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Selection replacement preserves an active semantic selection",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Repeat, system-break and page-break commands persist without conflicting flags",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Dynamics, chord symbols and score text reach semantic storage and MusicXML",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Lyric paragraph, verse copy, search/replace, offsets, reset and deletion are functional",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Playback command starts and stop command terminates the semantic transport",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "PNG export produces a genuine PNG payload through the desktop save service",
+      "status": "PASS",
+      "details": "{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]}"
+    },
+    {
+      "name": "Print success and cancellation are distinct non-error outcomes",
+      "status": "PASS",
+      "details": "{\"setup\":{\"measures\":6,\"key\":\"G\",\"time\":\"3/4\",\"pickup\":1},\"partCountAfterAdd\":2,\"partCountAfterRemove\":1,\"editedPart\":{\"instrumentKey\":\"violin\",\"clef\":\"treble\"},\"paste\":{\"beforePaste\":2,\"afterPaste\":4},\"voice2\":2,\"replacementSelection\":2,\"measureAfterSystem\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":true,\"newPage\":false},\"measureAfterPage\":{\"id\":\"measure-ms7e88ri-2zzd\",\"number\":1,\"timeSignature\":\"3/4\",\"key\":\"G\",\"repeatStart\":true,\"repeatEnd\":true,\"repeatTimes\":2,\"endings\":[],\"rehearsalMark\":\"\",\"barline\":\"regular\",\"newSystem\":false,\"newPage\":true},\"dynamics\":[\"ff\"],\"chordSymbols\":[\"Cmaj7\"],\"annotations\":[\"dolce\"],\"lyricBeforeReset\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc3\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Bright\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":5,\"offsetY\":-3,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8a2s-5qc4\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":2,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"lyricAfterDelete\":[{\"id\":\"lyric-ms7e89za-5js1\",\"noteId\":\"note-ms7e896c-3t1d\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"Praise\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e89za-5js2\",\"noteId\":\"note-ms7e897q-3w8j\",\"partId\":\"part-ms7e88ri-2zzj\",\"staffId\":null,\"voiceId\":1,\"verse\":1,\"lineType\":\"verse\",\"text\":\"morning\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}],\"roundTrip\":{\"measures\":6,\"repeatStart\":true,\"repeatEnd\":true,\"newPage\":true,\"chordSymbols\":1,\"annotations\":2},\"xml\":{\"repeat\":true,\"pageBreak\":true,\"dynamics\":true,\"chord\":true,\"text\":true},\"playbackStarted\":true,\"png\":{\"found\":true,\"defaultName\":\"score-page-1.png\",\"bytes\":89000,\"signature\":[137,80,78,71,13,10,26,10]},\"printSuccess\":{\"printed\":true,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}},\"printCancelled\":{\"status\":\"Printing cancelled\",\"errorVisible\":false,\"payload\":{\"title\":\"Untitled Score\",\"pageSize\":\"A4\",\"orientation\":\"portrait\",\"margins\":15,\"pageCount\":1,\"view\":\"staff\",\"paginationSignature\":\"staff|A4|portrait|15|1|0-6\"}}}"
+    },
+    {
+      "name": "Ornament command updates selected semantic note",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Technique command updates selected semantic note",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Build 43 creates a real 3:2 tuplet with retimed onsets",
+      "status": "PASS",
+      "details": "{\"semantic\":{\"tuplets\":[{\"start\":0,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"begin\"},{\"start\":0.3333333333333333,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"continue\"},{\"start\":0.6666666666666666,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"end\"}],\"ties\":1,\"slurs\":1},\"rendered\":{\"beams\":1,\"tupletNumbers\":1,\"ties\":1,\"slurs\":1},\"xml\":{\"tuplet\":true,\"beam\":true,\"tie\":true,\"slur\":true},\"scoreErrors\":[]}"
+    },
+    {
+      "name": "Build 43 creates grouped semantic beams",
+      "status": "PASS",
+      "details": "{\"semantic\":{\"tuplets\":[{\"start\":0,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"begin\"},{\"start\":0.3333333333333333,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"continue\"},{\"start\":0.6666666666666666,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"end\"}],\"ties\":1,\"slurs\":1},\"rendered\":{\"beams\":1,\"tupletNumbers\":1,\"ties\":1,\"slurs\":1},\"xml\":{\"tuplet\":true,\"beam\":true,\"tie\":true,\"slur\":true},\"scoreErrors\":[]}"
+    },
+    {
+      "name": "Build 43 creates strict ties and phrase slurs",
+      "status": "PASS",
+      "details": "{\"semantic\":{\"tuplets\":[{\"start\":0,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"begin\"},{\"start\":0.3333333333333333,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"continue\"},{\"start\":0.6666666666666666,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"end\"}],\"ties\":1,\"slurs\":1},\"rendered\":{\"beams\":1,\"tupletNumbers\":1,\"ties\":1,\"slurs\":1},\"xml\":{\"tuplet\":true,\"beam\":true,\"tie\":true,\"slur\":true},\"scoreErrors\":[]}"
+    },
+    {
+      "name": "Build 43 renders beams, tuplets, ties and slurs on the staff",
+      "status": "PASS",
+      "details": "{\"semantic\":{\"tuplets\":[{\"start\":0,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"begin\"},{\"start\":0.3333333333333333,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"continue\"},{\"start\":0.6666666666666666,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"end\"}],\"ties\":1,\"slurs\":1},\"rendered\":{\"beams\":1,\"tupletNumbers\":1,\"ties\":1,\"slurs\":1},\"xml\":{\"tuplet\":true,\"beam\":true,\"tie\":true,\"slur\":true},\"scoreErrors\":[]}"
+    },
+    {
+      "name": "Build 43 exports rhythmic notation to MusicXML",
+      "status": "PASS",
+      "details": "{\"semantic\":{\"tuplets\":[{\"start\":0,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"begin\"},{\"start\":0.3333333333333333,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"continue\"},{\"start\":0.6666666666666666,\"duration\":0.3333333333333333,\"actual\":3,\"normal\":2,\"beam\":\"end\"}],\"ties\":1,\"slurs\":1},\"rendered\":{\"beams\":1,\"tupletNumbers\":1,\"ties\":1,\"slurs\":1},\"xml\":{\"tuplet\":true,\"beam\":true,\"tie\":true,\"slur\":true},\"scoreErrors\":[]}"
+    },
+    {
+      "name": "Fermata command updates selected semantic note",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Sol-fa syllable edits the selected staff note",
+      "status": "PASS",
+      "details": "[{\"midi\":55,\"pitch\":\"G3\",\"syllable\":\"s\"}]"
+    },
+    {
+      "name": "Sol-fa passage creates authoritative Voice 4 events",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Staff playback and Sol-fa verification passes",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Optional Sol-fa staff overlay is stored in score settings",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Multi-verse lyric entry stores verse as metadata",
+      "status": "PASS",
+      "details": "[{\"id\":\"lyric-ms7e8btb-8ccp\",\"noteId\":\"note-ms7e8bol-86sx\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8ccq\",\"noteId\":\"note-ms7e8bom-86t6\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8ccr\",\"noteId\":\"note-ms7e8bom-86tf\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8ccs\",\"noteId\":\"note-ms7e8bom-86to\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8cct\",\"noteId\":\"note-ms7e8bom-86tx\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8ccu\",\"noteId\":\"note-ms7e8bom-86u6\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8ccv\",\"noteId\":\"note-ms7e8bom-86uf\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"},{\"id\":\"lyric-ms7e8btb-8ccw\",\"noteId\":\"note-ms7e8bom-86uo\",\"partId\":\"part-ms7e8avn-6tz6\",\"staffId\":null,\"voiceId\":4,\"verse\":2,\"lineType\":\"verse\",\"text\":\"Rejoice\",\"syllabic\":\"single\",\"hyphenState\":\"none\",\"melisma\":false,\"extensionState\":\"none\",\"extendType\":null,\"elision\":false,\"offsetX\":0,\"offsetY\":0,\"placement\":\"below\",\"visibleInParts\":true,\"language\":\"\",\"fontFamily\":\"\",\"fontSize\":\"\",\"fontStyle\":\"\",\"justify\":\"\",\"valign\":\"\",\"styleId\":\"lyrics-default\"}]"
+    },
+    {
+      "name": "Publication hierarchy renders semantic metadata",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Publication text position persists in semantic layout",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Page-scoped text is visible and semantic",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Lyric command updates score",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Piano panel is hidden by default",
+      "status": "PASS",
+      "details": "{\"height\":587.8125,\"hidden\":true}"
+    },
+    {
+      "name": "Docked piano panel opens below score without overlay",
+      "status": "PASS",
+      "details": "{\"before\":{\"height\":587.8125,\"hidden\":true},\"after\":{\"hidden\":false,\"scoreHeight\":363.8125,\"panelHeight\":224,\"expanded\":\"true\"}}"
+    },
+    {
+      "name": "Piano chord enters one deduplicated semantic chord in active Voice 3",
+      "status": "PASS",
+      "details": "{\"before\":16,\"after\":19,\"count\":3,\"midis\":[60,64,67],\"voices\":[3,3,3],\"chords\":[\"chord-ms7e8cmh-9chb\"],\"selected\":3}"
+    },
+    {
+      "name": "Piano selection is reflected on visible keys",
+      "status": "PASS",
+      "details": "{\"before\":16,\"after\":19,\"count\":3,\"midis\":[60,64,67],\"voices\":[3,3,3],\"chords\":[\"chord-ms7e8cmh-9chb\"],\"selected\":3}"
+    },
+    {
+      "name": "Piano audition mode does not create score events",
+      "status": "PASS",
+      "details": "{\"before\":19,\"after\":19,\"inputMode\":false}"
+    },
+    {
+      "name": "Piano panel collapses and returns score space",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Count-in and metronome options reach semantic transport",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Measure navigation moves to exact measure boundary",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Pause preserves playback position",
+      "status": "PASS",
+      "details": "{\"loop\":false,\"loopStart\":0,\"loopEnd\":16,\"metronome\":true,\"countInMeasures\":2,\"paused\":true,\"layerMix\":{\"1\":{\"muted\":false,\"solo\":false,\"volume\":1},\"2\":{\"muted\":false,\"solo\":false,\"volume\":1},\"3\":{\"muted\":false,\"solo\":false,\"volume\":1},\"4\":{\"muted\":false,\"solo\":false,\"volume\":1}},\"playing\":false,\"beat\":1.75}"
+    },
+    {
+      "name": "MIDI permission failure is visible and nonfatal",
+      "status": "PASS",
+      "details": "{\"status\":\"permission-denied\",\"message\":\"MIDI permission failed: Permission denied for reliability test\",\"errorVisible\":true}"
+    },
+    {
+      "name": "MIDI input connects, records a real note, stops and disconnects cleanly",
+      "status": "PASS",
+      "details": "{\"before\":0,\"connected\":{\"mode\":\"step\",\"status\":\"connected\",\"deviceId\":\"preview-input\",\"recording\":false,\"messagesReceived\":0,\"notesEntered\":0,\"lastError\":null},\"recording\":{\"mode\":\"realtime\",\"status\":\"recording\",\"deviceId\":\"preview-input\",\"recording\":true,\"messagesReceived\":0,\"notesEntered\":0,\"lastError\":null},\"stopped\":{\"mode\":\"realtime\",\"status\":\"connected\",\"deviceId\":\"preview-input\",\"recording\":false,\"messagesReceived\":2,\"notesEntered\":1,\"lastError\":null},\"entered\":[{\"midi\":67,\"duration\":0.8,\"voice\":3}],\"disconnected\":{\"mode\":\"realtime\",\"status\":\"disabled\",\"deviceId\":null,\"recording\":false,\"messagesReceived\":2,\"notesEntered\":1,\"lastError\":null},\"status\":\"MIDI disabled\"}"
+    },
+    {
+      "name": "Web MIDI output schedules note-on and note-off messages",
+      "status": "PASS",
+      "details": "{\"device\":\"preview-output\",\"messages\":[{\"data\":[144,55,88],\"timestamp\":9589.799999999814},{\"data\":[128,55,0],\"timestamp\":9798.133333333148},{\"data\":[144,60,96],\"timestamp\":9589.799999999814},{\"data\":[128,60,0],\"timestamp\":10214.799999999814},{\"data\":[144,64,96],\"timestamp\":9589.799999999814},{\"data\":[128,64,0],\"timestamp\":10214.799999999814},{\"data\":[144,67,96],\"timestamp\":9589.900000000373},{\"data\":[128,67,0],\"timestamp\":10214.900000000373},{\"data\":[144,60,88],\"timestamp\":9589.900000000373},{\"data\":[128,60,0],\"timestamp\":10214.900000000373},{\"data\":[144,62,88],\"timestamp\":9798.233333333706},{\"data\":[128,62,0],\"timestamp\":10006.566666667039},{\"data\":[144,64,88],\"timestamp\":10006.666666666666},{\"data\":[128,64,0],\"timestamp\":10215},{\"data\":[144,62,88],\"timestamp\":10215},{\"data\":[128,62,0],\"timestamp\":10840},{\"data\":[144,67,104],\"timestamp\":10754.049999999814},{\"data\":[128,67,0],\"timestamp\":11254.049999999814},{\"data\":[144,67,88],\"timestamp\":10840},{\"data\":[128,67,0],\"timestamp\":11465},{\"data\":[144,64,88],\"timestamp\":10840},{\"data\":[128,64,0],\"timestamp\":11465},{\"data\":[144,67,88],\"timestamp\":11465},{\"data\":[128,67,0],\"timestamp\":12090},{\"data\":[144,65,88],\"timestamp\":11465},{\"data\":[128,65,0],\"timestamp\":12090},{\"data\":[144,69,88],\"timestamp\":12090},{\"data\":[128,69,0],\"timestamp\":12715},{\"data\":[144,67,88],\"timestamp\":12090},{\"data\":[128,67,0],\"timestamp\":12715},{\"data\":[144,71,88],\"timestamp\":12715},{\"data\":[128,71,0],\"timestamp\":13340},{\"data\":[144,69,88],\"timestamp\":12715.099999999627},{\"data\":[128,69,0],\"timestamp\":13340.099999999627},{\"data\":[144,72,88],\"timestamp\":13340.099999999627},{\"data\":[128,72,0],\"timestamp\":13965.099999999627},{\"data\":[144,71,88],\"timestamp\":13340.099999999627},{\"data\":[128,71,0],\"timestamp\":13965.099999999627},{\"data\":[144,72,88],\"timestamp\":13965.099999999627},{\"data\":[128,72,0],\"timestamp\":14590.099999999627}],\"status\":\"Scheduled 20 notes to MIDI output\"}"
+    },
+    {
+      "name": "Clean Build 60 publication proof is prepared for PNG and PDF inspection",
+      "status": "PASS",
+      "details": "{\"notes\":8,\"lyrics\":[\"Sing\",\"with\",\"joy\",\"to-day\",\"Music\",\"lifts\",\"every\",\"heart\"],\"title\":\"Airmonlink Composer Build 60\"}"
+    },
+    {
+      "name": "Build 58 integrated performance, mixer, parts and publishing report",
+      "status": "PASS",
+      "details": "{\"present\":true,\"status\":\"PASS\",\"notes\":8,\"channels\":1,\"parts\":2}"
+    },
+    {
+      "name": "Build 59 accessibility, interchange and interface audit",
+      "status": "PASS",
+      "details": "{\"present\":true,\"accessibility\":\"PASS\",\"interchange\":\"PASS\",\"controls\":476}"
+    },
+    {
+      "name": "Window title and score-information fields follow authoritative metadata",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Print preview reaches isolated desktop service",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Dedicated Tonic Sol-fa page",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Save reaches desktop service",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "MusicXML export reaches desktop service",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "MIDI export reaches desktop service",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "PDF command reaches desktop service",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "Browser PDF signature",
+      "status": "PASS",
+      "details": "94302"
+    },
+    {
+      "name": "Official colour identity",
+      "status": "PASS",
+      "details": "[\"#06152f\",\"#1d64c8\",\"#d9a928\"]"
+    },
+    {
+      "name": "No runtime exceptions",
+      "status": "PASS",
+      "details": "[]"
+    },
+    {
+      "name": "No console errors",
+      "status": "PASS",
+      "details": "[]"
+    }
+  ],
+  "exceptions": [],
+  "consoleErrors": []
+}

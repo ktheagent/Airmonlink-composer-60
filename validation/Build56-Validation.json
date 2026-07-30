@@ -1,0 +1,18 @@
+{
+  "build": 56,
+  "status": "PASS",
+  "gate": "npm run gate:build56",
+  "unitTests": 456,
+  "browserChecks": 76,
+  "viewportChecks": 36,
+  "performanceChecks": 6,
+  "requirements": [
+    "dense hit testing",
+    "coincident selection",
+    "multi-voice offsets",
+    "unisons and seconds",
+    "collision planning",
+    "professional page layout",
+    "editing handles excluded from print"
+  ]
+}

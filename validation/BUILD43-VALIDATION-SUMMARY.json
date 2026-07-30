@@ -1,0 +1,92 @@
+{
+  "product": "Airmonlink Composer 3",
+  "version": "1.2.3",
+  "build": 43,
+  "buildVersion": "1.2.3.43",
+  "status": "SOURCE-VALIDATED LOCAL RHYTHMIC-NOTATION CHECKPOINT \u2014 NOT FINAL",
+  "githubEmbargo": "ACTIVE",
+  "baseline": {
+    "archive": "Airmonlink-Composer-1.2.2-Build42-Local-Checkpoint.zip",
+    "expectedSha256": "142550fecdd1120f4e154c5cd26a6b1f108c2943f43f883b8ffab273f3999012",
+    "actualSha256": "142550fecdd1120f4e154c5cd26a6b1f108c2943f43f883b8ffab273f3999012",
+    "matched": true
+  },
+  "functionalScope": {
+    "tuplets": "PASS \u2014 true 3:2 retiming, chord-onset grouping and atomic rejection",
+    "beams": "PASS \u2014 manual nested and meter-aware automatic grouping",
+    "ties": "PASS \u2014 adjacent equal-pitch semantic spanners",
+    "slurs": "PASS \u2014 ordered phrase spanners",
+    "fourVoices": "PASS \u2014 deterministic stem policy",
+    "renderer": "PASS \u2014 SVG beams, hooks, tuplets, ties, slurs and marks",
+    "persistence": "PASS \u2014 .airscore and MusicXML",
+    "suppliedScoreInitialization": "PASS",
+    "spannerMigrationDeduplication": "PASS"
+  },
+  "validation": {
+    "javascriptSyntax": {
+      "status": "PASS",
+      "files": 91
+    },
+    "automatedTests": {
+      "status": "PASS",
+      "passed": 359,
+      "total": 359
+    },
+    "performance": {
+      "status": "PASS",
+      "passed": 6,
+      "total": 6
+    },
+    "browser": {
+      "status": "PASS",
+      "passed": 56,
+      "total": 56
+    },
+    "viewport": {
+      "status": "PASS",
+      "passed": 36,
+      "total": 36
+    },
+    "preview": {
+      "status": "PASS"
+    },
+    "pdf": {
+      "status": "PASS",
+      "path": "validation/composer3-print.pdf"
+    },
+    "screenshots": {
+      "status": "PASS",
+      "paths": [
+        "validation/composer3-browser.png",
+        "validation/composer3-solfa.png"
+      ]
+    },
+    "cleanDependencyInstall": {
+      "status": "BLOCKED",
+      "onlineAttempt": "No completion within the available execution window",
+      "offlineError": "ENOTCACHED: yocto-queue@0.1.0 was not present in the environment cache",
+      "sourceLockfile": "Public npm registry URLs retained"
+    }
+  },
+  "visualTruth": {
+    "rhythmicNotationVisible": true,
+    "professionalPageGate": "FAIL/INCOMPLETE",
+    "observedLimitations": [
+      "dense notation and lyric/text combinations can still collide",
+      "system justification and publication spacing remain below professional engraving quality",
+      "Tonic Sol-fa publication is still visually text-heavy and disconnected from a finished engraved page"
+    ]
+  },
+  "notTested": [
+    "Windows compilation",
+    "Setup and Portable executables",
+    "PE metadata",
+    "installation, upgrade, file association and uninstall",
+    "code signing",
+    "human Windows usability",
+    "physical audio devices",
+    "physical MIDI devices",
+    "physical printers"
+  ],
+  "githubWritesPerformed": false
+}

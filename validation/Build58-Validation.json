@@ -1,0 +1,39 @@
+{
+  "build": 58,
+  "buildVersion": "1.3.0.58",
+  "status": "PASS",
+  "gate": {
+    "npm run validate": {
+      "status": "PASS",
+      "tests": 470,
+      "releaseControls": 109
+    },
+    "npm run performance": {
+      "status": "PASS",
+      "checks": 6
+    },
+    "npm run preview": {
+      "status": "PASS"
+    },
+    "npm run browser-smoke": {
+      "status": "PASS",
+      "checks": 78
+    },
+    "npm run viewport-matrix": {
+      "status": "PASS",
+      "checks": 36,
+      "scenarios": 4
+    }
+  },
+  "features": [
+    "playback cursor/count-in/metronome/loop/tempo/repeat/dynamic planning",
+    "mixer channels and master state",
+    "semantic instrument assignment",
+    "linked part generation",
+    "concert/written pitch reporting",
+    "MusicXML and MIDI round trips",
+    "PDF/PNG/SVG publication planning",
+    "print preview",
+    "save/reopen/autosave/recovery evidence"
+  ]
+}
