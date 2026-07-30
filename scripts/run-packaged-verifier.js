@@ -15,13 +15,19 @@ if (result.stdout) process.stdout.write(result.stdout);
 if (result.stderr) process.stderr.write(result.stderr);
 
 if (result.error) {
-  console.error(`::error title=Packaged Build 60 verifier failed::${String(result.error.message).replace(/\r?\n/g, ' %0A')}`);
+  const message = String(result.error.message).replace(/%/g, '%25').replace(/\r?\n/g, '%0A');
+  console.error(`::error title=Packaged Build 60 verifier failed::${message}`);
   process.exit(1);
 }
 
 if (result.status !== 0) {
-  const output = `${result.stderr || result.stdout || 'Packaged payload verification failed without output.'}`.trim();
-  const summary = output.split(/\r/\n/).slice(-6).join(' | ').replace(/%/g, '%25').replace(/\r/\n/g, '%00');
+  const output = String(result.stderr || result.stdout || 'Packaged payload verification failed without output.').trim();
+  const summary = output
+    .split(/\r?\n/)
+    .slice(-6)
+    .join(' | ')
+    .replace(/%/g, '%25')
+    .replace(/\r?\n/g, '%0A');
   console.error(`::error title=Packaged Build 60 verifier failed::${summary}`);
   process.exit(result.status || 1);
 }
