@@ -6,14 +6,18 @@ const path = require('node:path');
 const asar = require('@electron/asar');
 
 const EXPECTED = Object.freeze({
+  productName: 'Airmonlink Composer',
+  productSlug: 'Airmonlink-Composer',
   appVersion: '1.3.0',
   buildNumber: 60,
   buildVersion: '1.3.0.60',
   setupFile: 'Airmonlink-Composer-1.3.0-Build60-Setup.exe',
-  portableFile: 'Airmonlink-Composer-1.3.0-Build60-Portable.exe'
+  portableFile: 'Airmonlink-Composer-1.3.0-Build60-Portable.exe',
+  installDirectory: 'AirmonlinkComposerBuild60'
 });
 
 const REQUIRED_PAYLOAD_FILES = Object.freeze([
+  'release-metadata.json',
   'src/composer3/index.html',
   'src/composer3/app.js',
   'src/composer3/main.js',
@@ -26,7 +30,7 @@ const REQUIRED_PAYLOAD_FILES = Object.freeze([
   'src/composer3/build57-staff-solfa-lyrics-controller.js',
   'src/composer3/build58-performance-publishing-controller.js',
   'src/composer3/build59-release-quality-controller.js',
-  'src/composer3/build60-release-candidate-controlller.js',
+  'src/composer3/build60-release-candidate-controller.js',
   'src/core/integrated-release-candidate-service.js'
 ]);
 
@@ -44,65 +48,87 @@ function readPacked(archivePath, relativePath) {
 
 function assertEqual(actual, expected, label) {
   if (actual !== expected) {
-    throw new Error(`${label}: expected ${expected}, found ${actual}`);
+    throw new Error(`${label}: expected ${JSON.stringify(expected)}, found ${JSON.stringify(actual)}`);
+  }
+}
+
+function assertIdentity(metadata, label) {
+  for (const [key, expected] of Object.entries(EXPECTED)) {
+    assertEqual(metadata[key], expected, `${label}.${key}`);
   }
 }
 
 function main() {
-  const archivePath = path.resolve(process.argv[2] || 'release/win-unpacked/resources/app.asar');
+  const root = path.resolve(__dirname, '..');
+  const archivePath = path.resolve(process.argv[2] || path.join(root, 'release/win-unpacked/resources/app.asar'));
   if (!fs.existsSync(archivePath)) {
     throw new Error(`Packaged app.asar was not found: ${archivePath}`);
   }
 
+  const sourceMetadata = JSON.parse(fs.readFileSync(path.join(root, 'release-metadata.json'), 'utf8'));
+  const packedMetadata = JSON.parse(readPacked(archivePath, 'release-metadata.json').toString('utf8'));
   const packedPackage = JSON.parse(readPacked(archivePath, 'package.json').toString('utf8'));
+
+  assertIdentity(sourceMetadata, 'source release metadata');
+  assertIdentity(packedMetadata, 'packaged release metadata');
+  assertEqual(packedPackage.name, 'airmonlink-composer', 'packaged package.json name');
   assertEqual(packedPackage.version, EXPECTED.appVersion, 'packaged package.json version');
-  assertEqual(packedPackage.buildNumber, EXPECTED.buildNumber, 'packaged package.json buildNumber');
-  assertEqual(packedPackage.buildVersion, EXPECTED.buildVersion, 'packaged package.json buildVersion');
-  assertEqual(packedPackage.build?.buildVersion, EXPECTED.buildVersion, 'packaged Electron buildVersion');
-  assertEqual(packedPackage.build?.nsis?.artifactName, 'Airmonlink-Composer-${version}-Build60-Setup.${ext}', 'packaged NSIS artifact pattern');
-  assertEqual(packedPackage.build?.portable?.artifactName, 'Airmonlink-Composer-${version}-Build60-Portable.${ext}', 'packaged Portable artifact pattern');
+  assertEqual(packedPackage.main, 'src/composer3/main.js', 'packaged package.json main');
 
   const verifiedFiles = [];
   for (const relativePath of REQUIRED_PAYLOAD_FILES) {
-    const sourcePath = path.resolve(relativePath);
+    const sourcePath = path.join(root, relativePath);
     if (!fs.existsSync(sourcePath)) {
       throw new Error(`Checked-out source file is missing: ${relativePath}`);
     }
+
     const sourceBuffer = fs.readFileSync(sourcePath);
     const packedBuffer = readPacked(archivePath, relativePath);
     const sourceSha256 = sha256(sourceBuffer);
     const packedSha256 = sha256(packedBuffer);
     assertEqual(packedSha256, sourceSha256, `packaged hash for ${relativePath}`);
+
     verifiedFiles.push({
       path: relativePath,
       bytes: packedBuffer.length,
-      sha256: packaeddSha256
+      sha256: packedSha256
     });
   }
 
   const packedIndex = readPacked(archivePath, 'src/composer3/index.html').toString('utf8');
-  for (let build = 51; build <= 60; build += 1) {
-    const scriptName = `build${build}-`;
-    if (!packedIndex.includes(scriptName)) {
-      throw new Error(`Packaged interface does not load the Build ${build} controller.`);
+  assertEqual(
+    packedIndex.includes(`${EXPECTED.appVersion} · Build ${EXPECTED.buildNumber}`),
+    true,
+    'packaged interface visible Build 60 identity'
+  );
+
+  const controllerFiles = REQUIRED_PAYLOAD_FILES
+    .filter(relativePath => /build(?:5[1-9]|60)-.+-controller\.js$/.test(relativePath))
+    .map(relativePath => path.basename(relativePath));
+
+  for (const controllerFile of controllerFiles) {
+    if (!packedIndex.includes(controllerFile)) {
+      throw new Error(`Packaged interface does not load ${controllerFile}.`);
     }
   }
 
   const result = {
     status: 'PASS',
+    sourceCommit: process.env.GITHUB_SHA || null,
     archive: archivePath,
     archiveBytes: fs.statSync(archivePath).size,
     archiveSha256: sha256(fs.readFileSync(archivePath)),
-    appVersion: EXPECTED.appVersion,
-    buildNumber: EXPECTED.buildNumber,
-    buildVersion: EXPECTED.buildVersion,
-    expectedSetupFile: EXPECTED.setupFile,
-    expectedPortableFile: EXPECTED.portableFile,
-    verifiedFileCount: verifiedFiles.length,
+    identity: packedMetadata,
+    packagedPackage: {
+      name: packedPackage.name,
+      version: packedPackage.version,
+      main: packedPackage.main
+    },
+    verifiedFileCount: verifiefFiles.length,
     verifiedFiles
   };
 
-  const outputPath = path.resolve('release/WINDOWS-PACKAGED-PAYLOAD-VERIFICATION.json');
+  const outputPath = path.join(root, 'release/WINDOWS-PACKAGED-PAYLOAD-VERIFICATION.json');
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`, 'utf8');
   console.log(JSON.stringify(result, null, 2));
