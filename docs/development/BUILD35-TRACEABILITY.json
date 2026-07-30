@@ -1,0 +1,54 @@
+{
+  "version": "1.1.15",
+  "build": 35,
+  "createdAt": "2026-07-27T13:47:18.347502+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "implemented": [
+    {
+      "requirement": "Professional ensemble templates cover solo, piano, choir, lead sheet, chamber, concert band, brass band, orchestra and percussion ensemble.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "278/278 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Standard, grand, percussion, tablature, linked and ossia staff descriptors are normalized with four voice layers.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "278/278 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Linked part descriptors reference authoritative source parts rather than duplicating musical events.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "278/278 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Part-specific page setup, layout overrides, naming and deterministic batch-export plans are implemented.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "278/278 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Cue notes preserve source IDs and are explicitly muted in playback.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "278/278 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Manual visual overrides are isolated from onset, duration and pitch; engraving and range audits are covered.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "278/278 automated tests; source lint passed"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "item": "Windows font rasterization, native batch PDF generation and physical print output are not verified locally.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Advanced guitar bends, harp pedal diagrams and drum-map UI editing are represented by extensible staff data but not fully exposed in the interface.",
+      "status": "PARTIALLY IMPLEMENTED"
+    },
+    {
+      "item": "Part extraction files are planned and validated semantically; native Windows export remains for Build 38.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    }
+  ],
+  "nextAction": "Continue with Build 36 playback, mixer, MIDI, audio export and practice workflows."
+}

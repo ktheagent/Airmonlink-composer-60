@@ -1,0 +1,54 @@
+{
+  "version": "1.1.16",
+  "build": 36,
+  "createdAt": "2026-07-27T13:52:36.880821+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "implemented": [
+    {
+      "requirement": "Persistent mixer model provides instrument channels, mute, solo, volume, pan, reverb send, sound and master output settings.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "287/287 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Practice presets support SATB voice isolation/emphasis, tempo scaling, loops, count-in, metronome, transposition and accompaniment-only mixes.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "287/287 automated tests; source lint passed"
+    },
+    {
+      "requirement": "MIDI configuration covers step-time/real-time modes, quantisation, latency, velocity, channel and note filters.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "287/287 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Recorded MIDI events quantise deterministically and duplicate same-note events are removed.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "287/287 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Audio export plans generate deterministic full-mix, stem and part filenames.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "287/287 automated tests; source lint passed"
+    },
+    {
+      "requirement": "A real deterministic PCM WAV renderer exports score events and excludes muted cue notes.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "287/287 automated tests; source lint passed"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "item": "Physical audio output devices, MIDI keyboards and latency calibration are not tested in this environment.",
+      "status": "PARTIALLY IMPLEMENTED"
+    },
+    {
+      "item": "Compressed audio formats are intentionally not included without a verified lawful encoder; WAV is implemented.",
+      "status": "PARTIALLY IMPLEMENTED"
+    },
+    {
+      "item": "Windows native audio-device selection and long-score real-time playback remain unverified.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    }
+  ],
+  "nextAction": "Continue with Build 37 Premium Composition Hub, assisted composition and analysis."
+}

@@ -1,0 +1,50 @@
+{
+  "version": "1.1.19",
+  "build": 39,
+  "createdAt": "2026-07-27T14:26:11.422188+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "implemented": [
+    {
+      "requirement": "Searchable Ctrl+K command palette generated from connected application commands.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "323/323 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Shortcut normalization/conflict checking, score search, navigator models, selection filters and single-transaction batch plans.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "323/323 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Cancellable background task controller, accessible notifications and recoverable failure classification.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "323/323 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Path/URL validation, restricted-renderer source assertions and plugin permission isolation.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "323/323 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Performance budgets for startup, editing, rendering, playback, export, memory and shutdown.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "323/323 automated tests; source lint passed"
+    },
+    {
+      "requirement": "High-contrast, reduced-motion, scalable-control and coarse-pointer refinements.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "323/323 automated tests; source lint passed"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "item": "Performance budgets are defined and unit-tested, but production Windows measurements have not been collected.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Screen-reader behaviour and keyboard flow are source-validated but not manually tested with Windows assistive technology.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    }
+  ],
+  "nextAction": "Integrate Build 40, run three whole-system audits, complete documentation and evaluate the Windows release gate."
+}

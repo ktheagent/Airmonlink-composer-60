@@ -1,0 +1,49 @@
+{
+  "version": "1.1.12",
+  "build": 32,
+  "createdAt": "2026-07-27T13:28:57.248859+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "implemented": [
+    {
+      "requirement": "Professional input state covers pitch-first, duration-first, rhythm-first, repitch, insert and overwrite modes.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "247/247 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Chord input deduplicates pitches and creates one semantic chord in one undoable engine transaction.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "247/247 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Single/double dots, grace and tuplet metadata are preserved by input.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "247/247 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Voice exchange, staff movement, exact rest filling, selection summaries and Escape layering are implemented.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "247/247 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Build 31 workspace and publishing regression suite remains green.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "247/247 automated tests; source lint passed"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "item": "Windows installer and portable executables are not compiled in the local Linux environment.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Touch hardware, physical MIDI devices, audio devices and printers are not tested.",
+      "status": "PARTIALLY IMPLEMENTED"
+    },
+    {
+      "item": "Advanced nested tuplet engraving and every microtonal glyph remain scheduled for Build 33.",
+      "status": "PARTIALLY IMPLEMENTED"
+    }
+  ],
+  "nextAction": "Continue with Build 33 notation, rhythm, symbol attachment and navigation."
+}

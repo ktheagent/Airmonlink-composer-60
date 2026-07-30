@@ -1,0 +1,30 @@
+{
+  "product": "Airmonlink Composer 3",
+  "version": "1.2.3",
+  "build": 43,
+  "checkpoint": "Airmonlink-Composer-1.2.3-Build43",
+  "status": "LOCAL SOURCE-VALIDATED CHECKPOINT \u2014 NOT FINAL",
+  "githubEmbargo": "ACTIVE",
+  "baseline": {
+    "name": "Airmonlink-Composer-1.2.2-Build42-Local-Checkpoint.zip",
+    "sha256": "142550fecdd1120f4e154c5cd26a6b1f108c2943f43f883b8ffab273f3999012",
+    "verified": true
+  },
+  "validation": {
+    "syntaxFiles": 91,
+    "testsPassed": 359,
+    "testsTotal": 359,
+    "performancePassed": 6,
+    "performanceTotal": 6,
+    "browserPassed": 56,
+    "browserTotal": 56,
+    "viewportPassed": 36,
+    "viewportTotal": 36
+  },
+  "windowsArtifacts": {
+    "setup": null,
+    "portable": null
+  },
+  "githubWrites": false,
+  "nextAction": "Build 44 \u2014 lyrics, Tonic Sol-fa and Staff synchronization, followed by professional page reconstruction."
+}

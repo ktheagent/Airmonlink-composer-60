@@ -1,0 +1,113 @@
+{
+  "version": "1.2.0",
+  "build": 40,
+  "generatedAt": "2026-07-27T14:46:16.523422+00:00",
+  "sourceReleaseCandidate": true,
+  "releaseReady": false,
+  "status": "IMPLEMENTED BUT NOT VERIFIED",
+  "sourceValidation": {
+    "automatedTests": "332/332 passed",
+    "syntax": "85 files passed",
+    "performance": "6/6 passed",
+    "browser": "46/46 passed",
+    "viewport": "36/36 passed",
+    "pdf": "generated and rendered"
+  },
+  "blockingRequirements": [
+    {
+      "id": "OMR-37",
+      "title": "Bundled production OMR recognition engine",
+      "status": "PARTIALLY IMPLEMENTED",
+      "evidence": [
+        "Confidence-gated review/import contract"
+      ],
+      "blockers": [
+        "No bundled recognition model or representative production fixture corpus"
+      ]
+    },
+    {
+      "id": "TRANSCRIBE-37",
+      "title": "Bundled production audio transcription engine",
+      "status": "PARTIALLY IMPLEMENTED",
+      "evidence": [
+        "Confidence-gated review/import contract"
+      ],
+      "blockers": [
+        "No bundled transcription model or representative production audio corpus"
+      ]
+    },
+    {
+      "id": "A11Y-39",
+      "title": "Keyboard names, focus, high contrast, scaling, reduced motion and accessible notifications",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "Source assertions and automated accessibility-oriented tests"
+      ],
+      "blockers": [
+        "Not manually tested with Windows Narrator, NVDA or keyboard-only user session"
+      ]
+    },
+    {
+      "id": "CLEAN-DEP",
+      "title": "Clean dependency restore from lockfile",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "Lockfile and package metadata consistent"
+      ],
+      "blockers": [
+        "Offline npm cache lacks yocto-queue; npm ci --offline failed with ENOTCACHED"
+      ]
+    },
+    {
+      "id": "WIN-PACK",
+      "title": "Windows x64 NSIS and Portable production packaging",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "evidence": [
+        "electron-builder workflow and artifact names configured"
+      ],
+      "blockers": [
+        "GitHub embargo prevents Windows Actions",
+        "Local Linux environment has no Wine, NSIS or electron-builder installation"
+      ]
+    },
+    {
+      "id": "WIN-RUN",
+      "title": "Windows install, launch, upgrade, association and uninstall validation",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "evidence": [],
+      "blockers": [
+        "No Windows executable exists for Build 40",
+        "No Windows runner authorized during embargo"
+      ]
+    },
+    {
+      "id": "HW-MIDI",
+      "title": "Physical MIDI and audio-device verification",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "Automated MIDI/audio semantics pass"
+      ],
+      "blockers": [
+        "No physical MIDI/audio device was used"
+      ]
+    },
+    {
+      "id": "HW-PRINT",
+      "title": "Physical printer and Windows print-driver verification",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "PDF generation and rendered-page check pass"
+      ],
+      "blockers": [
+        "No physical printer or Windows print driver was used"
+      ]
+    }
+  ],
+  "confirmedArtifacts": [],
+  "expectedArtifactNames": [
+    "Airmonlink-Composer-1.2.0-Build40-Setup.exe",
+    "Airmonlink-Composer-1.2.0-Build40-Portable.exe"
+  ],
+  "githubEmbargo": "ACTIVE",
+  "nextAction": "Lift the GitHub embargo or provide an authorized Windows x64 build environment, then run clean dependency restore, Windows packaging, install/startup/upgrade/uninstall tests and three complete Windows audit cycles."
+}

@@ -1,0 +1,737 @@
+{
+  "product": "Airmonlink Composer 3",
+  "version": "1.1.10",
+  "buildNumber": 30,
+  "buildVersion": "1.1.10.30",
+  "classification": "LOCAL VIEWPORT-STABILIZATION CHECKPOINT - NOT FINAL",
+  "githubEmbargoStatus": "ACTIVE",
+  "createdUtc": "2026-07-27T11:24:13.860275+00:00",
+  "files": 144,
+  "bytes": 7462851,
+  "excludedFromHashList": [
+    "SOURCE-MANIFEST.txt",
+    "docs/checkpoints/BUILD30-CHECKPOINT-MANIFEST.json"
+  ],
+  "entries": [
+    {
+      "path": ".github/workflows/windows-build.yml",
+      "bytes": 1309,
+      "sha256": "d3c7371468670003df20509255f6e261e43889985014c620b75ffc714b7ea954"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 65,
+      "sha256": "a72dd9da10cd702e0e61b92006c1200c34a5b3ee1d14734459049b9144813833"
+    },
+    {
+      "path": "AUDIT-REPORT.md",
+      "bytes": 4404,
+      "sha256": "15a81e7be111a63e25bef32908a56ae502a56ec87bf0111c2474bc32e778ad24"
+    },
+    {
+      "path": "Airmonlink-Composer-3-Preview.html",
+      "bytes": 1814597,
+      "sha256": "2d89f5620b9156c368b8e9a54e06bbfdc8e5400c48b519663f0993b26dc39145"
+    },
+    {
+      "path": "BUILD-13-IMPLEMENTATION-REPORT.md",
+      "bytes": 1668,
+      "sha256": "90f9034398f8762a3589a7e5db37b12f816573a5b12c7d94f8051a537c723d7e"
+    },
+    {
+      "path": "BUILD-REPORT.md",
+      "bytes": 3403,
+      "sha256": "eb677cb68504581577c92098e4c9bd7cf84eda1e9a0319c05debacf16258f678"
+    },
+    {
+      "path": "BUILDING-WINDOWS.md",
+      "bytes": 788,
+      "sha256": "fab2538554da51e739ad0db17228ba9629d49edde45bffa231d601977962ae18"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 7975,
+      "sha256": "61e5b905365ccee8f3be4f28fcf16d52956111c17a10e2fc8c970b7450e2cc24"
+    },
+    {
+      "path": "KNOWN-LIMITATIONS.md",
+      "bytes": 3838,
+      "sha256": "f0b8ac6508497200141b6d0c33dda58f8efa3bb80ff7348c9b10d648ef135e1b"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 358,
+      "sha256": "e3abc058261a9ba2b8baae3d324087535163249ab85520455b77813b2771afac"
+    },
+    {
+      "path": "MIGRATION-NOTES.md",
+      "bytes": 1891,
+      "sha256": "446aee30464ee409b5456df582e8153d01d4b00e500c4e4b0b1bc17166b620af"
+    },
+    {
+      "path": "MUSESCORE-REFERENCE-LOG.md",
+      "bytes": 5186,
+      "sha256": "c5c073dc4ca03a713423d218295b8ad7251a649ba859ecdc7a2cf4b03ed2754f"
+    },
+    {
+      "path": "PERFORMANCE-AUDIT-0.9.1.md",
+      "bytes": 4976,
+      "sha256": "f8beadcfba789c0cf763da068a1caa848a70c72c08e06ba7f6c59a17cc3dea0f"
+    },
+    {
+      "path": "PERFORMANCE-COMPARISON.json",
+      "bytes": 1073,
+      "sha256": "cc46dfdfe84a5925b4f93d4859647899942cdff92df9bb765e95a5bd172acafd"
+    },
+    {
+      "path": "PHASE-2-IMPLEMENTATION-REPORT.md",
+      "bytes": 7776,
+      "sha256": "a3c16e642ddd96812d109ded98807f6a7d14a0eceac30325cbf869369b3f6a5c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1617,
+      "sha256": "6d207d6f54e517b67f529ab583f55fe81f92aecb1cf14c11e855878896c26ea4"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "bytes": 1607,
+      "sha256": "d87388e318256896874ee8dd3e0b67d09cc6f126299533fe64a16400375bf995"
+    },
+    {
+      "path": "SELF-CRITIQUE-BUILD-13.md",
+      "bytes": 1793,
+      "sha256": "3d6b8dabb6e682410b444834bdb533937974b0e5e3ae0e8466177f179719384a"
+    },
+    {
+      "path": "SHUTDOWN-BENCHMARK.json",
+      "bytes": 923,
+      "sha256": "5d09aac461c3b7f4b4d8fed368003c3d3a305171952165b2e1e376dc213a639c"
+    },
+    {
+      "path": "SHUTDOWN-REPORT.md",
+      "bytes": 4788,
+      "sha256": "7e88927196f9f1c61a73022039a86deddac96dc2db6f78167eb8a9bb4f79b352"
+    },
+    {
+      "path": "TEST-REPORT.txt",
+      "bytes": 5281,
+      "sha256": "8cfd772809dbc9c6b63b8ceece0f467f0cf5a34aa20d44d86b4f072873ed9094"
+    },
+    {
+      "path": "TONIC-SOLFA-AUDIT-0.8.0.md",
+      "bytes": 5461,
+      "sha256": "918e3aeaf139e41b1347e98ec46dd0f6c12fd473285f31a49fe8a48c4cacdd05"
+    },
+    {
+      "path": "TONIC-SOLFA-AUDIT-0.9.0.md",
+      "bytes": 1282,
+      "sha256": "5cff933e66e0fc3faa57a27eb1a1e3027f391e717b01639e2cfef58fc173881d"
+    },
+    {
+      "path": "TONIC-SOLFA-CONVENTION.md",
+      "bytes": 2016,
+      "sha256": "313f0f778abf32382ddfb8239b125628940a585c7ec5f695ec3e0274e77afcfc"
+    },
+    {
+      "path": "TONIC-SOLFA-SOURCE-RESEARCH.md",
+      "bytes": 2261,
+      "sha256": "4c8eff7647b03cba53e9ec2f5a6d63db5f44c3b5bd21b67cd0ddc5290be5a8b3"
+    },
+    {
+      "path": "USER-GUIDE.md",
+      "bytes": 4256,
+      "sha256": "3caa93b05c594a59a46263988fff3855db7ac3995ad2e4e6e76715e196efb8cd"
+    },
+    {
+      "path": "WINDOWS-INSTALLER-REPORT.md",
+      "bytes": 2212,
+      "sha256": "4623eef66048ccf18c7a560aeeb38d294e494a4ca3607c06b45e21a931d372cd"
+    },
+    {
+      "path": "assets/icon.ico",
+      "bytes": 163508,
+      "sha256": "e006e7e4987b4fa0e5237e6a202ba6bfa871fa629b2fb09025dd5be5aa73d7b9"
+    },
+    {
+      "path": "assets/icon.png",
+      "bytes": 212674,
+      "sha256": "324234d3a9a5b6d3730db40da5c6bef86698cb1242f836aa458cbe526290d4e0"
+    },
+    {
+      "path": "assets/icon.svg",
+      "bytes": 828,
+      "sha256": "fef6d868d4d6438b1d894c9d6280e99062b0c17e76bb183184cdd686269d6961"
+    },
+    {
+      "path": "assets/official-logo.png",
+      "bytes": 939928,
+      "sha256": "02394ae851777a4678b53936c120599c4c75d866b9cbb4081ef7dc5004bc18eb"
+    },
+    {
+      "path": "build_windows.ps1",
+      "bytes": 633,
+      "sha256": "6a1106dac5f4ea4a78438d20a64c9788b834c6772072a8526b11b92ab545a735"
+    },
+    {
+      "path": "docs/BUILD14-COMPLETION-MATRIX.md",
+      "bytes": 5170,
+      "sha256": "c22f34a19f173f98e6ce0ea80a48bfbf8c5dbc0d189e7875b23ac36c527a119d"
+    },
+    {
+      "path": "docs/BUILD14-VISUAL-VALIDATION.md",
+      "bytes": 2030,
+      "sha256": "e89e02bbf45db4204c9ccfe1949b531aa39596a9e0873fd17ff4a926e5a103db"
+    },
+    {
+      "path": "docs/ENGRAVING-DECISION.md",
+      "bytes": 1910,
+      "sha256": "2651ddd1a617c01d25e47a49a9e4f7832742f92241f33f17fc9df29c9cdd9b0e"
+    },
+    {
+      "path": "docs/THIRD-PARTY-NOTICES.md",
+      "bytes": 730,
+      "sha256": "4f657b1ab9301667feedc7ef055d3bf92ee98d7724d8ad3b982dc2acf5445b76"
+    },
+    {
+      "path": "docs/TONIC-SOLFA-RESEARCH.md",
+      "bytes": 3506,
+      "sha256": "29d222d80ed9f80f99d77c8077326959acec38aba696f0ab7c0e9fd5cb8193e7"
+    },
+    {
+      "path": "docs/checkpoints/BUILD29-CHECKPOINT-MANIFEST.json",
+      "bytes": 23777,
+      "sha256": "b35d44e8b663004d10956e1a9d79afcacfd96dd3543d97ddfcade861bda63c5f"
+    },
+    {
+      "path": "docs/checkpoints/BUILD29-INTEGRATED-WORKSPACE-CHECKPOINT.md",
+      "bytes": 3451,
+      "sha256": "5a61e16063d901604126dc8db8e4c89a845d742779284e5282ed2b39f7cfc349"
+    },
+    {
+      "path": "docs/checkpoints/BUILD29-ROOT-CAUSE-AUDIT.md",
+      "bytes": 3349,
+      "sha256": "bbe826e8b1cefee4554de22314ed89f87f2a5687343f9acd50220965a5825b31"
+    },
+    {
+      "path": "docs/checkpoints/BUILD30-LOCAL-CHECKPOINT.md",
+      "bytes": 1571,
+      "sha256": "0b04100dd14919dab4ff97a82cf52f090886a392923f87e22eae5e6b2dc49bd4"
+    },
+    {
+      "path": "docs/development/BUILD29-INTEGRATION-AUDIT.md",
+      "bytes": 3040,
+      "sha256": "a8216683df99927f62d8f662ffe781c6c5e5aa7d339ac05b0833ffa8053e79c4"
+    },
+    {
+      "path": "docs/development/BUILD29-RESTORE-VERIFICATION.md",
+      "bytes": 1189,
+      "sha256": "669eb229244e4c0a7261709768477a3fe2a5c4d29b78c319804482fe464be02d"
+    },
+    {
+      "path": "docs/development/BUILD30-STABILIZATION-AUDIT.md",
+      "bytes": 2406,
+      "sha256": "0fe39f55ae2aae13416b5be9361949d168bd16a508e45337e892f7a94f213f40"
+    },
+    {
+      "path": "docs/development/CHECKPOINT-MANIFEST.json",
+      "bytes": 21429,
+      "sha256": "e962bbb82a745536959b6b3a2b52971453a0f8f33f86bd59b3d020b28ccd0f55"
+    },
+    {
+      "path": "docs/development/COMPLETE-DEVELOPMENT-CONTRACT.md",
+      "bytes": 25393,
+      "sha256": "e40991c1d5b966f2ce47e234876b4797eebff89c29097d2abc99c642106052c2"
+    },
+    {
+      "path": "docs/development/PRODUCTION-RELEASE-CANDIDATE-AUDIT.md",
+      "bytes": 3991,
+      "sha256": "86c5bd9b0b6f0d761319cf1d194511d8863e958f0e753c54abb2f04595113d8d"
+    },
+    {
+      "path": "docs/development/PROJECT-STATUS.md",
+      "bytes": 2189,
+      "sha256": "0022a875d50fab36e5ddc7fb5cb08d1fa597b83c7d768753f680325be9fe3bfc"
+    },
+    {
+      "path": "docs/development/REQUIREMENTS-REGISTER.md",
+      "bytes": 8314,
+      "sha256": "2a723a869d6b909b1d5e84be5d350d1adac9d44c82d99b9b8f32620fc9044d3d"
+    },
+    {
+      "path": "docs/development/RESTORE-VERIFICATION.md",
+      "bytes": 2403,
+      "sha256": "13f93a191e2133e780b3632bc2968c111ccf58a552bc8e2cae162f364748fcf6"
+    },
+    {
+      "path": "docs/development/SELF-CRITIQUE-BUILD28.md",
+      "bytes": 2133,
+      "sha256": "009dffd22db7856eac0d20e7618af8614791af9a45f3a6d950327c245ac29f0e"
+    },
+    {
+      "path": "docs/development/TEST-REPORT.md",
+      "bytes": 899,
+      "sha256": "12dd6267fc8494e98a5c73164ad40ab2c65dd64182c0174cba7f4908848d8a57"
+    },
+    {
+      "path": "docs/development/TRACEABILITY-MATRIX.md",
+      "bytes": 982,
+      "sha256": "5143619519893052fab32835ba53fa58b1cb0b283e80853f556c1b6e6b608dbd"
+    },
+    {
+      "path": "installer/windows-direct/README.md",
+      "bytes": 813,
+      "sha256": "2c15e6eb3d2d062955f464a30dd35af42d1818576a8a2fcc13fceae9719dff63"
+    },
+    {
+      "path": "installer/windows-direct/installer.go",
+      "bytes": 10993,
+      "sha256": "b9b2b31a704dc24d31d426a046d1cae3cb7ef1d1ccd45b575fa17cc3c738416c"
+    },
+    {
+      "path": "installer/windows-direct/uninstaller.go",
+      "bytes": 3427,
+      "sha256": "4cc5e8c045cd9e77a095b11e840f9e300d3da48579c7a0b8d5525720fb162420"
+    },
+    {
+      "path": "installer/windows-nsis/portable.nsi",
+      "bytes": 616,
+      "sha256": "4a90a35915832daeb8fb0754122b06b03966f566c42268f0fc11126eca0bc850"
+    },
+    {
+      "path": "installer/windows-nsis/setup.nsi",
+      "bytes": 3366,
+      "sha256": "d1676360d31363cae6454384a8acf5920fe80ebc0bc3c2f8c76fe6a2703f1110"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 142016,
+      "sha256": "6f62c10688baaee9fdef613e00f7dab0accacef2028f6b576e1806d34ed386a9"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2431,
+      "sha256": "c65960fe52370619b5dcf24804fd36a87495e45da4cca8faa7fe345fb8d17197"
+    },
+    {
+      "path": "scripts/browser-smoke.js",
+      "bytes": 24925,
+      "sha256": "d865403eabef405b851c5651759af3de5530d912360bc497ce1bb08f90baa31c"
+    },
+    {
+      "path": "scripts/browser_smoke.py",
+      "bytes": 6990,
+      "sha256": "9da33f7b0915a01b785c314e1dcf5c4051c71f2cafa9a8bdc9b5b6ab684bc02d"
+    },
+    {
+      "path": "scripts/build-preview.js",
+      "bytes": 5633,
+      "sha256": "8828462f71052d60ad5ad380e531dd647f077f0c53a9df027fd8c6c4c78194a7"
+    },
+    {
+      "path": "scripts/lint.js",
+      "bytes": 871,
+      "sha256": "6038b96e78666051f23eb8d8f7d0b8ad9201447b489ef3f251db2672f888b773"
+    },
+    {
+      "path": "scripts/performance-audit.js",
+      "bytes": 4129,
+      "sha256": "471dcdcef0693dcfb4ad2fd314bb543966d7b5d018b34f2b01d7185a2dc71c94"
+    },
+    {
+      "path": "scripts/performance_compare.py",
+      "bytes": 4664,
+      "sha256": "e15fe743ddceb224b61b91d2ee1925f8986bdc17681f4ec39a2e8a488653effb"
+    },
+    {
+      "path": "scripts/shutdown_benchmark.py",
+      "bytes": 4067,
+      "sha256": "eeff0b0478c157f54bbe8a8a635fc44c42966a338bc8bd3b901dfacee51a4d29"
+    },
+    {
+      "path": "scripts/viewport-matrix.js",
+      "bytes": 14547,
+      "sha256": "78a72e8d4d288228c02616e89d019577ca94c8a4f8b31e3840ff9862e5cf7b14"
+    },
+    {
+      "path": "setup_windows.ps1",
+      "bytes": 532,
+      "sha256": "e0a358853f99d4cc7d978db70d075ab2c9a6d06262196352e0ec6ddbe3128850"
+    },
+    {
+      "path": "src/composer3/app.js",
+      "bytes": 104570,
+      "sha256": "3cdded4789df51e8b78e764746994e82a3ed0c527969b1c949af4da73ee14c52"
+    },
+    {
+      "path": "src/composer3/engine-api.js",
+      "bytes": 58870,
+      "sha256": "bdc0c20d840f09b9c55a0e687a3a682915387c950b71bc454ef9649a09e1a554"
+    },
+    {
+      "path": "src/composer3/index.html",
+      "bytes": 1287849,
+      "sha256": "ca01d48f77d1be078a35428dfd27700f1482ef1310160e60868942483c204fdc"
+    },
+    {
+      "path": "src/composer3/main.js",
+      "bytes": 14421,
+      "sha256": "b84a30142f14df544b593abfe6f8ee02ab6947b67bf315f8c42b38373a224841"
+    },
+    {
+      "path": "src/composer3/preload.js",
+      "bytes": 2480,
+      "sha256": "aaea061358e04fef3677622c458253069328e80a887286706411f5454104c742"
+    },
+    {
+      "path": "src/composer3/styles.css",
+      "bytes": 20603,
+      "sha256": "5dd7d5afb751f13081fb09c68e817c8a23255ec27081b985d8fb818b70792530"
+    },
+    {
+      "path": "src/composer3/viewport-layout-service.js",
+      "bytes": 16098,
+      "sha256": "c8c1882a7d609a3297ccae58d89c77ae6fd4f2574325a641acc6e892e63dc45f"
+    },
+    {
+      "path": "src/core/airscore.js",
+      "bytes": 7311,
+      "sha256": "088c06f6f50b9b7f243e3f6c29d10ade4ef191bf7dfea886bd0ea3422900b748"
+    },
+    {
+      "path": "src/core/editing.js",
+      "bytes": 16713,
+      "sha256": "94577846906e6164fce0a6166c9b14408d41c6117e40b607fe0d47721453335d"
+    },
+    {
+      "path": "src/core/formats.js",
+      "bytes": 74091,
+      "sha256": "25153fc223dac2ecaf43a4c17c07f89623cb140fa0c02d4bf88027718d107ce2"
+    },
+    {
+      "path": "src/core/harmony.js",
+      "bytes": 17170,
+      "sha256": "a3e5e9508357fb4b9417c730c19373bb87a11f5e67cb9badf20eba0d9f313bf9"
+    },
+    {
+      "path": "src/core/history.js",
+      "bytes": 6639,
+      "sha256": "3ce01ea401cef5f215ed26c82af74f1ff86000fb539df2042c423d6fb8168ee9"
+    },
+    {
+      "path": "src/core/layout-engine.js",
+      "bytes": 13699,
+      "sha256": "981f6746c7ed4a209fa254d29e6293db634c4b18f110a8eafac385d7ca0698dc"
+    },
+    {
+      "path": "src/core/lyrics.js",
+      "bytes": 7286,
+      "sha256": "d093a5d8bedbea0077f97f9032c16558c354635d1cfca167df2af72b49bc38b0"
+    },
+    {
+      "path": "src/core/midi-input.js",
+      "bytes": 8486,
+      "sha256": "9ed7dbf66d35a253b10d9c08375e832b949d74be503b925a87109759a1ab37f9"
+    },
+    {
+      "path": "src/core/music-theory.js",
+      "bytes": 15246,
+      "sha256": "a242148413fb00cce039979293e6a4c8c620b3dfbb48dcbfeef82a01b56a6dad"
+    },
+    {
+      "path": "src/core/notations.js",
+      "bytes": 7919,
+      "sha256": "ebef278611ed52498a297101d93c56a0cf96fcbae9bf9da2649b0c8d606a9b32"
+    },
+    {
+      "path": "src/core/playback.js",
+      "bytes": 13762,
+      "sha256": "72367a4ca453daae6261d5bcc9a13b0cdf3aaa3d97b795785750dca78e3a5a57"
+    },
+    {
+      "path": "src/core/score-model.js",
+      "bytes": 80169,
+      "sha256": "90306235d8998613d2c941faf9f2d1cd8344ee59655c6fd03afa7a20a018aa84"
+    },
+    {
+      "path": "src/core/selection.js",
+      "bytes": 4190,
+      "sha256": "c64782323ed62aca4a78807160b7a2ae35dfd00ff5ef244564539318a9f2d796"
+    },
+    {
+      "path": "src/core/solfa-layout.js",
+      "bytes": 6096,
+      "sha256": "a1f60c464ed1d167276ea3503cbdf7b386dab1f6e4b73ffe004104ed83c32f00"
+    },
+    {
+      "path": "src/core/solfa-parser.js",
+      "bytes": 21008,
+      "sha256": "73dc00702b836b3b422d2a22b9f3161b14aa5c5d5ebcbd604b3d809f927e29d7"
+    },
+    {
+      "path": "src/core/solfa.js",
+      "bytes": 23024,
+      "sha256": "b74f88925749cb88dd876689402c30366ca2653fb0759e1ed1edfed2940b3bd5"
+    },
+    {
+      "path": "src/core/workspace-state.js",
+      "bytes": 4278,
+      "sha256": "9a9f319376237f406ffeef4cb3bd54ddb61ce8b78fca048a568ffaab7d2909ff"
+    },
+    {
+      "path": "src/desktop/file-service.js",
+      "bytes": 9992,
+      "sha256": "5542b8cc34affaea93a7bdc15d3175713bc07bb358dc4d394c6444a8c6ada385"
+    },
+    {
+      "path": "src/desktop/shutdown-controller.js",
+      "bytes": 4408,
+      "sha256": "f5931a42482aa9412550649d50235941be4e2bf3828971f878be792b6ca23c69"
+    },
+    {
+      "path": "start_preview.bat",
+      "bytes": 59,
+      "sha256": "c2da7bd1db92d781739e7b618645d76dce5081be388108e869048d9cb998c5d2"
+    },
+    {
+      "path": "test/composer3-clean-architecture.test.js",
+      "bytes": 3047,
+      "sha256": "fc826d8e128eb346479e7f43cdb3231b9aac29786dde64ece58219ed22b42a21"
+    },
+    {
+      "path": "test/enhanced-notation.test.js",
+      "bytes": 5052,
+      "sha256": "1086861ee64af204b2032ee4c4a9434d451165513b11793369201c5fa7d8faaf"
+    },
+    {
+      "path": "test/formats-history.test.js",
+      "bytes": 2123,
+      "sha256": "07f16e0a804761a1ea88e3ad7c63387caf3d413a2a838b2985aa2ce055cac6c3"
+    },
+    {
+      "path": "test/music-theory.test.js",
+      "bytes": 751,
+      "sha256": "c8ab2b1e12d212ae6a84fd5f2270978ebf21e7f0f4b78d70fb8c41aac4f5f1d5"
+    },
+    {
+      "path": "test/professionalization.test.js",
+      "bytes": 4423,
+      "sha256": "7b9ae3299232b38646a66fee0aa866c81e792319097ef4f312bafd635fc30192"
+    },
+    {
+      "path": "test/sample-layers.musicxml",
+      "bytes": 2445,
+      "sha256": "6827d7c55728906614396eca296837d2e25f881ef1e0fc5a78ef6cd7936cde58"
+    },
+    {
+      "path": "test/score-model.test.js",
+      "bytes": 1385,
+      "sha256": "0fc70b8b36c4367bd59245178fddb7a15619bc9d1b2812759e6be6f2d64d5a78"
+    },
+    {
+      "path": "test/solfa-harmony.test.js",
+      "bytes": 1369,
+      "sha256": "49e5dd495524e3cffb66375dbd04e465a3993c65a013bcc7ff15e59890674d26"
+    },
+    {
+      "path": "test/structural-score.test.js",
+      "bytes": 4533,
+      "sha256": "861dc19b099c243416a720728f19f10cc2507758f741f73a2634d6358e9cb627"
+    },
+    {
+      "path": "test/v04-acceptance.test.js",
+      "bytes": 5405,
+      "sha256": "f9b03821625a967a3fe594dd67983b656332ce4ddb01e51ff4dcbeda6b259340"
+    },
+    {
+      "path": "test/v05-document-editing.test.js",
+      "bytes": 5770,
+      "sha256": "7d75c9f93a18362e0fd22b412082b5c781e9660fe7ea278c0d3b2cb3d020f443"
+    },
+    {
+      "path": "test/v06-tonic-four-layer.test.js",
+      "bytes": 10911,
+      "sha256": "88cd51b44f41da5dffbcfa0f3631d9f5a5258a3a47ad0d77f48484716532568f"
+    },
+    {
+      "path": "test/v07-integrated-instructions.test.js",
+      "bytes": 7921,
+      "sha256": "ff3b0e29f868e8104735f8fae40b987cbc0d14ed252b9f75269439e6e55b4fe9"
+    },
+    {
+      "path": "test/v08-video-workflow.test.js",
+      "bytes": 2655,
+      "sha256": "1e2b143f91bb56c032a0d89c96f5088d36954ec2984eb96cb358981ca9e58504"
+    },
+    {
+      "path": "test/v09-tonic-solfa-accuracy.test.js",
+      "bytes": 7858,
+      "sha256": "93209d31ee9abadf00c6a2a750c7d302ab93da149a382eac1839a466fea2c487"
+    },
+    {
+      "path": "test/v091-performance.test.js",
+      "bytes": 2317,
+      "sha256": "5f6be82253911f6ea2a85df3f5d448a401604225e6b85c9e0b5d41a10f21d4f9"
+    },
+    {
+      "path": "test/v092-shutdown-lifecycle.test.js",
+      "bytes": 4565,
+      "sha256": "59b300c3ccf85a79487a519666f374c1d253af33aa586f027a9e214b6e7a6a4e"
+    },
+    {
+      "path": "test/v100-phase2-foundations.test.js",
+      "bytes": 14596,
+      "sha256": "80a698b88d953bf1994ac70f7e4af3f6d17639025ef431ae674bd541b0c88bbe"
+    },
+    {
+      "path": "test/v100-workspace-phase2.test.js",
+      "bytes": 3120,
+      "sha256": "253adf88536c846ea97e3c4fedbf18187c4b82eebdab475652c0ee7413596958"
+    },
+    {
+      "path": "test/v110-publication-entry.test.js",
+      "bytes": 2290,
+      "sha256": "ecdb460ee7b2c3e903d7a5c59abd6a4c9bf6e653260f93b8e8d34f2d37f7091e"
+    },
+    {
+      "path": "test/v112-notation-core.test.js",
+      "bytes": 3901,
+      "sha256": "0ae33e8b2b7eacac16302eca935a8aaeafdd1a3e1232f5ea864211dbcfd8b78f"
+    },
+    {
+      "path": "test/v113-solfa-integration.test.js",
+      "bytes": 4539,
+      "sha256": "19a6540deac1119f2f5ed466335d338530e28f38948688582ce144dacc7984b2"
+    },
+    {
+      "path": "test/v114-lyrics-publication.test.js",
+      "bytes": 6840,
+      "sha256": "10ff7d8819766662adf63df0b9d06c8b51236db61d93b1bd849a67407d5bec25"
+    },
+    {
+      "path": "test/v115-professional-interface.test.js",
+      "bytes": 5254,
+      "sha256": "10fcbe5f28deb744e3f2f53d5ae9f2ca82ef75e8eff077d862961a315e6dd9bd"
+    },
+    {
+      "path": "test/v116-playback-files-publishing.test.js",
+      "bytes": 4444,
+      "sha256": "d52d7a3a1a9f1f08513e4bee9bb200b9dbc84ff1e5d6860e653cf99d52b3f0af"
+    },
+    {
+      "path": "test/v117-reliability-performance.test.js",
+      "bytes": 4371,
+      "sha256": "f85ff2ff0f65376fa9af0c23ecea3fad78b133d80096f7882ed816a4387d1b67"
+    },
+    {
+      "path": "test/v118-production-release-candidate.test.js",
+      "bytes": 3135,
+      "sha256": "3527f2abf2969331f4a0da45fa062cd92a967eee2421895f8dfc3289b7c6d0c7"
+    },
+    {
+      "path": "test/v119-viewport-layout-service.test.js",
+      "bytes": 6025,
+      "sha256": "7cef5db8f43c429ffc0203e4932a77a10b51414892a59270e5eb9adebc766cff"
+    },
+    {
+      "path": "test/v119-workspace-integration.test.js",
+      "bytes": 2801,
+      "sha256": "268630c16b007dcc527c4d27296992de2cb3816b0087a2bf1b82dce2db2f694f"
+    },
+    {
+      "path": "test/v120-build14-command-groups.test.js",
+      "bytes": 1202,
+      "sha256": "482f225201df09c240b68a6c0ad66128dac4f322868d20062f19c8b7add8d2f0"
+    },
+    {
+      "path": "test/v120-build14-entry-workflows.test.js",
+      "bytes": 4722,
+      "sha256": "f20dfadc45191d3b263b6f0d1f6046ade91af7a583cd2bd860e3a8799625a044"
+    },
+    {
+      "path": "test/v120-build14-publication-text.test.js",
+      "bytes": 2515,
+      "sha256": "3a4a32b5a58846bdae3660491d4ee30f8095b6883be894c37678fc1a65ec75f6"
+    },
+    {
+      "path": "test/v120-build14-solfa-layout.test.js",
+      "bytes": 4105,
+      "sha256": "b58ef4a584d84c1c3d5019585dec4b65a89e6ef1a95cbf3b5778ba108ca6154d"
+    },
+    {
+      "path": "test/v120-build14-workspace-migration.test.js",
+      "bytes": 1083,
+      "sha256": "70d57501eabd60ba9414fd49d5fb4cc07d403784c3912f3d9db0e02bcc0c2f4b"
+    },
+    {
+      "path": "test/v121-build30-viewport-stabilization.test.js",
+      "bytes": 6209,
+      "sha256": "2d1c3d9b2e349d1c0c1676919dab183800c1415fcf901f41035d73ec5f5145a3"
+    },
+    {
+      "path": "validation/browser-smoke.json",
+      "bytes": 14018,
+      "sha256": "13e74103912e1075f67ba09b75dc85e64c1d3d8d8f1d89d20d252987a88ca0d2"
+    },
+    {
+      "path": "validation/build30-full-validation.log",
+      "bytes": 47522,
+      "sha256": "6faa7a3f50e3c8fa33602a46d577ea5ab6bb881a480b7f4148ac0a59c27b0826"
+    },
+    {
+      "path": "validation/build30-validation-summary.json",
+      "bytes": 1864,
+      "sha256": "b63ae6b9e9dca3e01029eedd9b559daa59a9bac93d439f2e274cb9f5b82cbce3"
+    },
+    {
+      "path": "validation/build30-viewport-1366x768-1_25x.png",
+      "bytes": 232653,
+      "sha256": "db4c77d9b48b5b05fd3150e0ab1be142f9325784f1c6cf8fbaf82b7a4b80fc96"
+    },
+    {
+      "path": "validation/build30-viewport-1366x768-1x.png",
+      "bytes": 166807,
+      "sha256": "3a33ac7582f636ceb684a278f7053dfc989fd95219c1e646dc3976260303a6df"
+    },
+    {
+      "path": "validation/build30-viewport-1920x1080-1_5x.png",
+      "bytes": 435973,
+      "sha256": "9898e73a53cc1beb9ebe86b1dd89d54d97bf29802fc6fb77ef2888fa92ae207a"
+    },
+    {
+      "path": "validation/build30-viewport-1920x1080-1x.png",
+      "bytes": 242342,
+      "sha256": "2506e24d157394d1450dfba7ee9cf597c4dbcc5511dd8f01cac07b5b8b7f32f7"
+    },
+    {
+      "path": "validation/build30-viewport-matrix.json",
+      "bytes": 47651,
+      "sha256": "74075c25f98e5a823a7c7535dccf2f3bc87a07045d0e6017f3f3ff936253fbb5"
+    },
+    {
+      "path": "validation/composer3-browser.png",
+      "bytes": 284054,
+      "sha256": "65a551edbb73b38dac599d7f64f2ce33083638f08654098fce7c76b4f06436cf"
+    },
+    {
+      "path": "validation/composer3-print.pdf",
+      "bytes": 84712,
+      "sha256": "9393ed1b615d04bade79346d8b798c109e07c75c1108702cd84f2160d618114a"
+    },
+    {
+      "path": "validation/composer3-solfa.png",
+      "bytes": 293955,
+      "sha256": "a6278142cd8898b85331db30dc2e4286e036fcb67eca85b1ca72bb3e27fd3568"
+    },
+    {
+      "path": "validation/pdf-render/composer3-print-page1.png",
+      "bytes": 49725,
+      "sha256": "98733db64f0e04f8b24e2f375d8a4d0ff9583bb04b31db5390b44a9f7433efc4"
+    },
+    {
+      "path": "validation/performance-report.json",
+      "bytes": 1199,
+      "sha256": "b449ccb78232fe980d2cc4f62e97fe772f8df88b342c4c4406f1ce74f1a2fc84"
+    }
+  ]
+}

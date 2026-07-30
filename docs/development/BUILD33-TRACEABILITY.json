@@ -1,0 +1,54 @@
+{
+  "version": "1.1.13",
+  "build": 33,
+  "createdAt": "2026-07-27T13:33:29.378941+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "implemented": [
+    {
+      "requirement": "Simple, additive and alternating meter grammar is validated and exposed to notation services.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "259/259 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Microtonal, courtesy and editorial accidental semantics are normalized independently from display glyphs.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "259/259 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Tuplet ratio, nested level, bracket, number and placement metadata are preserved.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "259/259 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Notehead, stem, beam, tremolo, grace and cue properties attach to authoritative events.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "259/259 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Articulations, ornaments, technical marks, fermatas, barlines, repeats, voltas and navigation marks attach to semantic positions.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "259/259 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Repeat-aware playback measure order and orphan-spanner validation are covered by regression tests.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "259/259 automated tests; source lint passed"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "item": "Windows package and native print paths are not compiled or inspected locally.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Not every SMuFL glyph is visually verified because no Windows font-rendering session is available.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Guitar bends, pedal graphics and advanced nested-tuplet engraving remain dependent on Build 35 engraving integration.",
+      "status": "PARTIALLY IMPLEMENTED"
+    }
+  ],
+  "nextAction": "Continue with Build 34 Tonic Sol-fa, lyrics, publication text and choir workflows."
+}

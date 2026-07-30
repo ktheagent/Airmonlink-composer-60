@@ -1,0 +1,736 @@
+{
+  "product": "Airmonlink Composer",
+  "version": "1.3.0",
+  "buildNumber": 50,
+  "buildVersion": "1.3.0.50",
+  "statusLegend": [
+    "VERIFIED COMPLETE",
+    "IMPLEMENTED BUT NOT VERIFIED",
+    "PARTIALLY IMPLEMENTED",
+    "NOT IMPLEMENTED",
+    "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION"
+  ],
+  "authoritative": true,
+  "requirements": [
+    {
+      "id": "R-001",
+      "requirement": "Deliver a complete production Windows desktop notation application, not a prototype.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-002",
+      "requirement": "Use one authoritative semantic score model.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-003",
+      "requirement": "Expose reusable engine logic through a direct Composer 3 API.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-004",
+      "requirement": "Remove hidden legacy interfaces, controls, bridges, routes, and obsolete workflows.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-005",
+      "requirement": "Keep exactly four user-facing voice layers across editing, playback, save/load, import/export.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-006",
+      "requirement": "Preserve working nonvisual engine features while replacing obsolete presentation code.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-007",
+      "requirement": "Prevent CI from reconstructing or silently replacing canonical source.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-008",
+      "requirement": "Maintain consecutively increasing semantic development versions after 1.1.0.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core",
+      "verification": "src/core; src/composer3; package.json; test/v117-build40-complete-workflows.test.js",
+      "notes": ""
+    },
+    {
+      "id": "R-009",
+      "requirement": "Support staff notation with correct pitch, duration, measure, staff, voice, ties, slurs, articulations, and lyrics.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-010",
+      "requirement": "Support note and rest entry from mouse, keyboard, touch, piano, and MIDI.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-011",
+      "requirement": "Support selection, multi-selection, copy, paste, delete, transpose, override, and layer operations.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-012",
+      "requirement": "Support undo and redo for semantic edits.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-013",
+      "requirement": "Support measures, pickup measures, meter changes, key changes, repeats, and endings.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-014",
+      "requirement": "Support chords without duplicate pitches or conflicting semantic events.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-015",
+      "requirement": "Preserve layout edits separately from musical meaning.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-016",
+      "requirement": "Provide accurate engraving, collision handling, system layout, pagination, and print layout.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/score-model.js",
+      "verification": "src/core/score-model.js; src/composer3/engine-api.js; test/*.test.js; validation/browser-smoke.json",
+      "notes": ""
+    },
+    {
+      "id": "R-017",
+      "requirement": "Provide a dedicated printable Tonic Sol-fa page.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/solfa.js",
+      "verification": "src/core/solfa.js; src/core/choir-solfa-service.js; browser and PDF/PNG evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-018",
+      "requirement": "Provide optional synchronized Tonic Sol-fa on staff notation.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/solfa.js",
+      "verification": "src/core/solfa.js; src/core/choir-solfa-service.js; browser and PDF/PNG evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-019",
+      "requirement": "Keep staff notation and Tonic Sol-fa synchronized from the same events.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/solfa.js",
+      "verification": "src/core/solfa.js; src/core/choir-solfa-service.js; browser and PDF/PNG evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-020",
+      "requirement": "Support traditional and modern syllable systems, chromatic syllables, octave marks, rhythm punctuation, rests, bars, and key changes.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/solfa.js",
+      "verification": "src/core/solfa.js; src/core/choir-solfa-service.js; browser and PDF/PNG evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-021",
+      "requirement": "Keep Tonic Sol-fa page zoom separate from notation size, text size, and page dimensions.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/solfa.js",
+      "verification": "src/core/solfa.js; src/core/choir-solfa-service.js; browser and PDF/PNG evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-022",
+      "requirement": "Support multi-page Tonic Sol-fa with stable headers, lyrics, systems, page breaks, and print/export layout.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/solfa.js",
+      "verification": "src/core/solfa.js; src/core/choir-solfa-service.js; browser and PDF/PNG evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-023",
+      "requirement": "Support multiple lyric verses with stable attachment metadata.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/lyrics-service.js",
+      "verification": "src/core/lyrics-service.js; MusicXML tests; 70-check browser report",
+      "notes": ""
+    },
+    {
+      "id": "R-024",
+      "requirement": "Preserve hyphens, melismas, elisions, Unicode, verse numbers as metadata, and independent offsets.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/lyrics-service.js",
+      "verification": "src/core/lyrics-service.js; MusicXML tests; 70-check browser report",
+      "notes": ""
+    },
+    {
+      "id": "R-025",
+      "requirement": "Support rapid lyric entry, forward/backward navigation, paste, copy, search, and replace.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/lyrics-service.js",
+      "verification": "src/core/lyrics-service.js; MusicXML tests; 70-check browser report",
+      "notes": ""
+    },
+    {
+      "id": "R-026",
+      "requirement": "Preserve lyrics across editing, measure insertion, save/load, MusicXML, and Tonic Sol-fa.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/lyrics-service.js",
+      "verification": "src/core/lyrics-service.js; MusicXML tests; 70-check browser report",
+      "notes": ""
+    },
+    {
+      "id": "R-027",
+      "requirement": "Support editable publication metadata and page-scoped text.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/lyrics-service.js",
+      "verification": "src/core/lyrics-service.js; MusicXML tests; 70-check browser report",
+      "notes": ""
+    },
+    {
+      "id": "R-028",
+      "requirement": "Play from the authoritative score model with accurate tempo, timing, repeats, layers, and loop ranges.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/playback.js",
+      "verification": "src/core/playback.js; src/core/midi-input.js; browser MIDI mock workflows; physical device boundary separate",
+      "notes": ""
+    },
+    {
+      "id": "R-029",
+      "requirement": "Provide play, stop, rewind, seek, tempo, metronome, loop, and layer mute/solo controls.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/playback.js",
+      "verification": "src/core/playback.js; src/core/midi-input.js; browser MIDI mock workflows; physical device boundary separate",
+      "notes": ""
+    },
+    {
+      "id": "R-030",
+      "requirement": "Support MIDI step-time and real-time input where required.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/playback.js",
+      "verification": "src/core/playback.js; src/core/midi-input.js; browser MIDI mock workflows; physical device boundary separate",
+      "notes": ""
+    },
+    {
+      "id": "R-031",
+      "requirement": "Handle absent or failed audio and MIDI devices without crashing.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/playback.js",
+      "verification": "src/core/playback.js; src/core/midi-input.js; browser MIDI mock workflows; physical device boundary separate",
+      "notes": ""
+    },
+    {
+      "id": "R-032",
+      "requirement": "Preserve playback meaning when visual layout changes.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/playback.js",
+      "verification": "src/core/playback.js; src/core/midi-input.js; browser MIDI mock workflows; physical device boundary separate",
+      "notes": ""
+    },
+    {
+      "id": "R-033",
+      "requirement": "Save and reopen editable `.airscore` projects.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-034",
+      "requirement": "Detect damaged or unsupported files instead of silently opening them.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-035",
+      "requirement": "Save atomically, create backups, lock files safely, track recent files, and recover work.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-036",
+      "requirement": "Import and export MusicXML and compressed MXL.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-037",
+      "requirement": "Export standard MIDI.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-038",
+      "requirement": "Export valid PDF and PNG output.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-039",
+      "requirement": "Print through the Windows desktop workflow.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-040",
+      "requirement": "Keep all file and export paths synchronized with the authoritative score model.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/core/project-service.js",
+      "verification": "src/core/project-service.js; formats.js; desktop services; print-result.js; browser save/export/print evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-041",
+      "requirement": "Use the official navy, royal-blue, white, and gold colour identity.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-042",
+      "requirement": "Use the official logo and preserve readable white score pages.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-043",
+      "requirement": "Every visible control must call real functionality directly.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-044",
+      "requirement": "Provide clear loading, empty, invalid, unsupported, damaged, permission, export, and recovery states.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-045",
+      "requirement": "Preserve keyboard navigation, visible focus, accessible names, contrast, and scalable UI.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-046",
+      "requirement": "Ensure panels and docks do not cover the score and restore safely on compact displays.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-047",
+      "requirement": "Keep page zoom, notation scale, text scale, and print dimensions distinct.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "src/composer3/index.html",
+      "verification": "src/composer3/index.html; styles.css; accessibility and viewport tests; 4-scenario matrix",
+      "notes": ""
+    },
+    {
+      "id": "R-048",
+      "requirement": "Build Windows x64 NSIS installer and portable executable.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-049",
+      "requirement": "Validate generated files as non-empty PE executables with expected version and product metadata.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-050",
+      "requirement": "Perform bounded startup smoke testing of the portable and installed executable.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-051",
+      "requirement": "Test silent install and uninstall where supported.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-052",
+      "requirement": "Test `.airscore` file association when declared.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-053",
+      "requirement": "Preserve user data during upgrades; report blocked upgrade testing when no prior artifact exists.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-054",
+      "requirement": "Generate SHA-256 checksums for all distributable artifacts.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-055",
+      "requirement": "Upload release files and machine-readable validation evidence only after successful validation.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-056",
+      "requirement": "Never claim code-signing trust without a supplied signing certificate and verified signature.",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": ".github/workflows/windows-build.yml",
+      "verification": ".github/workflows/windows-build.yml; release-metadata.json; version-consistency.js; Windows execution still required",
+      "notes": "No code-signing certificate/private key was supplied."
+    },
+    {
+      "id": "R-057",
+      "requirement": "Maintain regression tests for every preserved feature before sensitive changes.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "verification": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-058",
+      "requirement": "Test absence of legacy DOM elements, hidden controls, and obsolete startup paths.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "verification": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-059",
+      "requirement": "Run the full test suite, not only a small clean-shell test subset.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "verification": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-060",
+      "requirement": "Include browser/runtime tests for visible workflows and failure states.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "verification": "npm lint/test/performance/preview/browser-smoke/viewport-matrix evidence",
+      "notes": ""
+    },
+    {
+      "id": "R-061",
+      "requirement": "Perform human visual inspection of the compiled Windows interface.",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "Requires human inspection of compiled Windows application",
+      "verification": "Requires human inspection of compiled Windows application",
+      "notes": "Needs human review on the compiled Windows application."
+    },
+    {
+      "id": "R-062",
+      "requirement": "Validate PDF and PNG output visually in independent viewers.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "validation/composer3-print.pdf rendered independently",
+      "verification": "validation/composer3-print.pdf rendered independently; browser and Sol-fa PNGs inspected",
+      "notes": ""
+    },
+    {
+      "id": "R-063",
+      "requirement": "Report audio, MIDI, printer, signing, upgrade, and accessibility hardware tests honestly.",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "Requires printer, MIDI hardware, assistive technology, signing certificate, and manual evidence",
+      "verification": "Requires printer, MIDI hardware, assistive technology, signing certificate, and manual evidence",
+      "notes": "Needs physical devices and assistive technology."
+    },
+    {
+      "id": "R-064",
+      "requirement": "Maintain a traceability matrix linking requirement, implementation, acceptance, automated test, manual test, status, and evidence.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "requirements register, traceability matrix, completion audit and truthful release gate",
+      "verification": "requirements register, traceability matrix, completion audit and truthful release gate",
+      "notes": ""
+    },
+    {
+      "id": "R-065",
+      "requirement": "Perform a final completion audit and self-critique before calling the product complete.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "requirements register, traceability matrix, completion audit and truthful release gate",
+      "verification": "requirements register, traceability matrix, completion audit and truthful release gate",
+      "notes": ""
+    },
+    {
+      "id": "R-066",
+      "requirement": "Do not call the product complete because it launches, builds, or passes a limited test set.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "requirements register, traceability matrix, completion audit and truthful release gate",
+      "verification": "requirements register, traceability matrix, completion audit and truthful release gate",
+      "notes": ""
+    },
+    {
+      "id": "R-067",
+      "requirement": "Use one authoritative Build 50 release metadata source for version, build number, build version, product slug, filenames, and installation identity.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "release-metadata.json",
+      "verification": "release-metadata.json; version-consistency.js; workflow-yaml-check.js; stale identity audit",
+      "notes": ""
+    },
+    {
+      "id": "R-068",
+      "requirement": "Fail before packaging when package metadata, lockfile, application-visible version, packaging configuration, or workflow-generated filenames disagree.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "release-metadata.json",
+      "verification": "release-metadata.json; version-consistency.js; workflow-yaml-check.js; stale identity audit",
+      "notes": ""
+    },
+    {
+      "id": "R-069",
+      "requirement": "Audit active source and workflow files for stale Build 43 release identities without deleting intentional historical evidence.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "release-metadata.json",
+      "verification": "release-metadata.json; version-consistency.js; workflow-yaml-check.js; stale identity audit",
+      "notes": ""
+    },
+    {
+      "id": "R-070",
+      "requirement": "Handle loading, empty, success, validation, permission-denied, cancellation, and failure states accurately.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "verification": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "notes": ""
+    },
+    {
+      "id": "R-071",
+      "requirement": "Preserve Electron context isolation, sandboxing, narrow IPC, path validation, URL validation, plugin permissions, and safe file handling.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "verification": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "notes": ""
+    },
+    {
+      "id": "R-072",
+      "requirement": "Meet declared startup, score-operation, layout, serialization, import/export, and rapid-entry performance budgets.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "verification": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "notes": ""
+    },
+    {
+      "id": "R-073",
+      "requirement": "Provide automated accessibility checks for names, roles, focus, live regions, keyboard commands, scaling, and colour-independent state.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "verification": "browser reports, failure-state tests, security tests, performance report, accessibility assertions",
+      "notes": ""
+    },
+    {
+      "id": "R-074",
+      "requirement": "Document backup, restore, recovery, migration, and upgrade behavior.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "docs/development and current Build 50 guides",
+      "verification": "docs/development and current Build 50 guides",
+      "notes": ""
+    },
+    {
+      "id": "R-075",
+      "requirement": "Provide current Build 50 installation, configuration, administrator, user, troubleshooting, and maintenance documentation.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "docs/development and current Build 50 guides",
+      "verification": "docs/development and current Build 50 guides",
+      "notes": ""
+    },
+    {
+      "id": "R-076",
+      "requirement": "Complete a clean locked dependency installation from the public registry.",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "validation/dependency-install.json records bounded registry failure",
+      "verification": "validation/dependency-install.json records bounded registry failure",
+      "notes": "Public npm registry was unreachable in the local sandbox."
+    },
+    {
+      "id": "R-077",
+      "requirement": "Complete three consecutive whole-system validation cycles after the final source change.",
+      "status": "VERIFIED COMPLETE",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "docs/development/BUILD50-AUDIT-CYCLES.json",
+      "verification": "docs/development/BUILD50-AUDIT-CYCLES.json",
+      "notes": "Three consecutive whole-system cycles passed after the final application source change."
+    },
+    {
+      "id": "R-078",
+      "requirement": "Verify a fresh Windows installation, first startup, application startup, save/reopen, export, and uninstall using the modified checkpoint.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "Modified checkpoint requires authorized Windows runner and prior installer",
+      "verification": "Modified checkpoint requires authorized Windows runner and prior installer",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    },
+    {
+      "id": "R-079",
+      "requirement": "Verify upgrade behavior and user-data preservation from a prior compatible release.",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "Modified checkpoint requires authorized Windows runner and prior installer",
+      "verification": "Modified checkpoint requires authorized Windows runner and prior installer",
+      "notes": "Needs both the newly built checkpoint and a prior compatible installer."
+    },
+    {
+      "id": "R-080",
+      "requirement": "Verify final Setup and Portable checksums and downloadable artifact contents for the modified checkpoint.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "plannedImplementation": "Preserve or complete the canonical Build 50 implementation and verify through the mapped automated/manual gate.",
+      "modules": "Windows artifact verification JSON, smoke result and SHA256SUMS from a future authorized build",
+      "verification": "Windows artifact verification JSON, smoke result and SHA256SUMS from a future authorized build",
+      "notes": "The workflow is implemented, but the modified local source has not been rebuilt on Windows."
+    }
+  ]
+}

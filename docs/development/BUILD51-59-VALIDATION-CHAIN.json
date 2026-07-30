@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "product": "Airmonlink Composer",
+  "validations": [
+    {
+      "build": 51,
+      "status": "PASS",
+      "commit": "c4d021dc39e22d1024ebb576f1be85e8f14f21fe",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build51-Source-Checkpoint.zip",
+      "sha256": "c5656dd0b0aba2650b6cc49a7190ce45a167146c8b1a8ae72c1556b3e91a5a7e"
+    },
+    {
+      "build": 52,
+      "status": "PASS",
+      "commit": "c0ae8d06a307a95b2b4052c136d58c527d1bee86",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build52-Source-Checkpoint.zip",
+      "sha256": "397b6e4245c2eaf16bedc6cf71fa288498eea081b4b8b84e7c8cfe8be4f75233"
+    },
+    {
+      "build": 53,
+      "status": "PASS",
+      "commit": "c18661bb3e83cb367d6d5e645eba38ed055a7e01",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build53-Source-Checkpoint.zip",
+      "sha256": "b7015605812c52e66f533741319c796e6dfb48d6c078d31793e29ca46772e4d7"
+    },
+    {
+      "build": 54,
+      "status": "PASS",
+      "commit": "ab4f46d4ac55c78b455d36b41b3b9086e9908862",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build54-Source-Checkpoint.zip",
+      "sha256": "1316b3f9d2e1bea9a22131f15bc7a108dadf5b23684993edcff0305f3e8cf6cb"
+    },
+    {
+      "build": 55,
+      "status": "PASS",
+      "commit": null,
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build55-Source-Checkpoint.zip",
+      "sha256": "63df6fa4183e392df35886e0d7b49467c3bd807232219473f28fc844d0fecb8b"
+    },
+    {
+      "build": 56,
+      "status": "PASS",
+      "commit": null,
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build56-Source-Checkpoint.zip",
+      "sha256": "2ac875ca0258c80d20d8bbd97d354b66ac925800ab40249d3a34d59293f52f62"
+    },
+    {
+      "build": 57,
+      "status": "PASS",
+      "commit": "f4f4e8623b11ee204f70733777d06628cb5bb1bc",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build57-Source-Checkpoint.zip",
+      "sha256": "cdccdea43f2fce6fba2b413407d24bf37a967c7481ec0507ea7c86d5913adcc0"
+    },
+    {
+      "build": 58,
+      "status": "PASS",
+      "commit": "6221796ac69ffebff3080ff452996c6e3215a86e",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build58-Source-Checkpoint.zip",
+      "sha256": "6e23522d4240905ba36400049029d6959a01706f684bdcd4911f6fe5aa3e8a70"
+    },
+    {
+      "build": 59,
+      "status": "PASS",
+      "commit": "a952f996d0cdc5cefe6b2e5e2a75606a79ae0fbf",
+      "manifestIntegrity": true,
+      "checkpoint": "Airmonlink-Composer-1.3.0-Build59-Source-Checkpoint.zip",
+      "sha256": "27d895e681f99e35f9991d501fd6d2eef25226b7223d043752ce5fb2a2b981f4"
+    }
+  ]
+}

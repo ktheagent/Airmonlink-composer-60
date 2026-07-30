@@ -1,0 +1,54 @@
+{
+  "version": "1.1.14",
+  "build": 34,
+  "createdAt": "2026-07-27T13:40:46.545636+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "implemented": [
+    {
+      "requirement": "One documented Tonic Sol-fa grammar exposes scale syllables, chromatic syllables and punctuation semantics.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "268/268 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Comma, dot, dash, underscore, colon and barline interpretation is audited against the semantic timeline.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "268/268 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Tonic Sol-fa passages convert into the authoritative staff events with stable IDs, pitch, duration, voice and staff.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "268/268 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Multiple lyric verses, syllabic metadata, chorus/refrain line types and verse-number separation are preserved.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "268/268 automated tests; source lint passed"
+    },
+    {
+      "requirement": "Semantic publication fields cover title, dedication, composer, arranger, translator, publisher and credits.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "268/268 automated tests; source lint passed"
+    },
+    {
+      "requirement": "SATB range analysis and Staff/Sol-fa/lyric synchronization reports are implemented.",
+      "status": "VERIFIED COMPLETE",
+      "evidence": "268/268 automated tests; source lint passed"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "item": "Windows font rendering, print/PDF visual inspection and physical page output are not verified locally.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Manual drag placement of every publication field is inherited but not re-tested on Windows in this checkpoint.",
+      "status": "IMPLEMENTED BUT NOT VERIFIED"
+    },
+    {
+      "item": "Native choir practice-track rendering remains scheduled for Build 36.",
+      "status": "PARTIALLY IMPLEMENTED"
+    }
+  ],
+  "nextAction": "Continue with Build 35 instruments, staves, linked parts and engraving."
+}

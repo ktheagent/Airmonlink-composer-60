@@ -1,0 +1,666 @@
+{
+  "status": "PASS",
+  "activePipelineStaleReferences": [],
+  "intentionalRetainedReferences": [
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 1,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "Airmonlink Composer 3 \u2014 Version 1.2.3 Build 43 Source Manifest",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 51,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "54ad72fc101313edc99e27d6dfc4ac9d57899b4b1207752eec52ddcd0ed93463  774  docs/BUILD43-KNOWN-LIMITATIONS.md",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 52,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "8b00940ba1337c43295a70f5f5735d372a8d4e7a66410e09421fd1cba5d8aa84  2048  docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 53,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "38304819e1a269e74c141ef9b2c999173f0e62ccda72905bc41636128ae1ccae  1469  docs/BUILD43-RHYTHMIC-NOTATION-IMPLEMENTATION.md",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 54,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "e0b51b035df4e33cfbfe50fb9381b585182150ef90a097d464ae39a0dba61f2c  1180  docs/BUILD43-VERIFICATION.md",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 203,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "5e6c230e662a75369539eb328fa1633ea3503467b088973dbaf893713ece8b97  12307  test/v123-build43-rhythmic-notation.test.js",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 215,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "150b9058388c9eb6e01b9c2639cbc633e1fcec945b34f76cba7f83eb02ec6e9a  2918  validation/BUILD43-VALIDATION-SUMMARY.json",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 217,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "84ad137cd2718d4d0a818cf9918bf499504f890f2663df672d6537ccf9c57409  77349  validation/build43-full-validation.log",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 218,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "5a3a4f3ff02fd213aa1a627b62b3549c1c0ca010b0e9aba7cf4bc3a8ddb3bbf4  365  validation/build43-npm-ci.log",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 219,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "82e580c9cdd12bae5d08b1c62e1f61764f01d4ec354025d5ac8f98a85f7e6687  322519  validation/build43-viewport-1366x768-1_25x.png",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 220,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "ec28bba78179bc17d934a828ca1e16d08758e0a47386646fc9232f509af61517  232467  validation/build43-viewport-1366x768-1x.png",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 221,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "658dceb42dd485621c8b91a34eb84b9aba4b0e632d40c11f19922ccdc4d81d9c  589730  validation/build43-viewport-1920x1080-1_5x.png",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 222,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "900717bb5cb3dca0bafc91e55604cbf8112791d41243fa3cf94e55e470f314c4  334883  validation/build43-viewport-1920x1080-1x.png",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "SOURCE-MANIFEST.txt",
+      "line": 223,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "58358a063028b61af1743fccecb40115ef26c6c95a25d399061bd9faf9906ab5  67197  validation/build43-viewport-matrix.json",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "line": 3,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "## 1.2.3 - Build 43 - Rhythmic notation and four-voice engraving reconstruction",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "VALIDATION-SUMMARY.json",
+      "line": 3,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "  \"version\": \"1.2.3\",",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "VALIDATION-SUMMARY.json",
+      "line": 5,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "  \"buildVersion\": \"1.2.3.43\",",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "scripts/workflow-yaml-check.js",
+      "line": 23,
+      "patterns": [
+        "Build43",
+        "old install dir"
+      ],
+      "text": "if (/Airmonlink-Composer-1\\.2\\.3-Build43|AirmonlinkComposerBuild43|1\\.2\\.3\\.43/i.test(workflow)) {",
+      "classification": "INTENTIONAL STALE-DETECTION GATE"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 521,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "    const build43Rhythm = await cdp.evaluate(`(async()=>{",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 580,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      build43Rhythm.semantic.tuplets.length===3 &&",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 581,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      Math.abs(build43Rhythm.semantic.tuplets[1].start-1/3)<1e-8 &&",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 582,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      build43Rhythm.semantic.tuplets.every(item=>item.actual===3&&item.normal===2),",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 583,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      JSON.stringify(build43Rhythm));",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 585,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      JSON.stringify(build43Rhythm.semantic.tuplets.map(item=>item.beam))===JSON.stringify(['begin','continue','end']),",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 586,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      JSON.stringify(build43Rhythm));",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 588,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      build43Rhythm.semantic.ties===1&&build43Rhythm.semantic.slurs===1,",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 589,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      JSON.stringify(build43Rhythm));",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 591,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      build43Rhythm.rendered.beams>=1&&build43Rhythm.rendered.tupletNumbers>=1&&",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 592,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      build43Rhythm.rendered.ties>=1&&build43Rhythm.rendered.slurs>=1,",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 593,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      JSON.stringify(build43Rhythm));",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 595,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      Object.values(build43Rhythm.xml).every(Boolean)&&build43Rhythm.scoreErrors.length===0,",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/browser-smoke.js",
+      "line": 596,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      JSON.stringify(build43Rhythm));",
+      "classification": "INTENTIONAL HISTORICAL REGRESSION LABEL"
+    },
+    {
+      "file": "scripts/version-consistency.js",
+      "line": 75,
+      "patterns": [
+        "Build43",
+        "old install dir"
+      ],
+      "text": "const staleIdentity = /Airmonlink-Composer-1\\.2\\.3-Build43-(?:Setup|Portable)\\.exe|AirmonlinkComposerBuild43|1\\.2\\.3\\.43|Airmonlink-Composer-Build43-(?:Windows|Linux)/i;",
+      "classification": "INTENTIONAL STALE-DETECTION GATE"
+    },
+    {
+      "file": "docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "line": 2,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-input-control:triplet,3:2 Triplet,tripletSelected,Ctrl+3,Exactly three rhythmic onsets in one part/staff/voice,\"engine.setTuplet(3, 2)\",Retimes three onsets into the time of two; chord tones share an onset,One engine commit,Staff rerender,airscore + MusicXML,test/v123-build43-rhythmic-notation.",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "line": 3,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-input-control:beam-selected,Beam,beamSelected,Ctrl+B,Two or more contiguous short-note onsets in one measure,engine.beamSelection(),Creates complete nested beam levels,One engine commit,Staff rerender,airscore + MusicXML,test/v123-build43-rhythmic-notation.test.js; browser-smoke,Browser SVG pro",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "line": 4,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-input-control:beam-auto,Auto,beamAuto,Ctrl+Shift+B,Selected short-note onsets in one lane,engine.autoBeamSelection(),Groups beams by active simple/compound/additive metre,One engine commit,Staff rerender,airscore + MusicXML,test/v123-build43-rhythmic-notation.test.js,Automated viewport/browser ",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "line": 5,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-input-control:remove-beams,Unbeam,removeBeams,,Selected notes,engine.clearSelectionBeams(),Removes selected beam metadata,One engine commit,Staff rerender,airscore + MusicXML,test/v123-build43-rhythmic-notation.test.js,Automated evidence only",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "line": 6,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-input-control:tie,Tie,tie,Ctrl+T,Exactly two adjacent equal-pitch notes in one lane,engine.addTie(),Creates one semantic tie spanner,One engine commit,Staff rerender,airscore + MusicXML,test/v123-build43-rhythmic-notation.test.js; browser-smoke,Browser SVG proof; no Windows human test",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "docs/BUILD43-RHYTHM-CONTROL-TRACEABILITY.csv",
+      "line": 7,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-input-control:slur,Slur,slur,Ctrl+L,Two or more ordered notes in one lane,engine.addSlur(),Creates one phrase slur from first to last selected onset,One engine commit,Staff rerender,airscore + MusicXML,test/v123-build43-rhythmic-notation.test.js; browser-smoke,Browser SVG proof; no Windows huma",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 2,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:accent,Accent,accent,,notation,ARTICULATIONS AND EXPRESSION,selected-note,Always enabled in markup; no central command-context contract,None,\"engine.setArticulation('accent', true)\",Adds a persistent accent articulation to selected notes,One Composer engine commit; tested undo/redo wher",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 26,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:beamAuto,Automatic beam,beamAuto,,notation,ARTICULATIONS AND EXPRESSION,selected-note,Always enabled in markup; no central command-context contract,None,engine.autoBeamSelection(),Creates meter-aware automatic beam groups,One Composer engine commit; tested undo/redo where applicable,Sco",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 27,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:beamSelected,Beam selected,beamSelected,,notation,ARTICULATIONS AND EXPRESSION,selected-note,,,engine.beamSelection(),Creates meter-safe nested beam levels for selected short-note onsets,One Composer engine commit; tested undo/redo where applicable,Score mutation triggers staff/page rer",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 50,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:marcato,Marcato,marcato,,notation,ARTICULATIONS AND EXPRESSION,selected-note,Always enabled in markup; no central command-context contract,None,\"engine.setArticulation('marcato', true)\",Adds a persistent marcato articulation to selected notes,One Composer engine commit; tested undo/redo",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 67,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:removeBeams,Remove beams,removeBeams,,notation,ARTICULATIONS AND EXPRESSION,selected-note,,,engine.clearSelectionBeams(),Removes beam metadata from selected notes,One Composer engine commit; tested undo/redo where applicable,Score mutation triggers staff/page rerender,,Persisted in .air",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 89,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:slur,Slur,slur,,notation,TIES SLURS AND SPANNERS,two-notes,Always enabled in markup; no central command-context contract,None,engine.addSlur(),Creates one semantic phrase slur across ordered selected positions,One Composer engine commit; tested undo/redo where applicable,Score mutation ",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 90,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:staccato,Staccato,staccato,,notation,ARTICULATIONS AND EXPRESSION,selected-note,Always enabled in markup; no central command-context contract,None,\"engine.setArticulation('staccato', true)\",Adds a persistent staccato articulation to selected notes,One Composer engine commit; tested undo",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 96,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:tenuto,Tenuto,tenuto,,notation,ARTICULATIONS AND EXPRESSION,selected-note,Always enabled in markup; no central command-context contract,None,\"engine.setArticulation('tenuto', true)\",Adds a persistent tenuto articulation to selected notes,One Composer engine commit; tested undo/redo wher",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 97,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:tie,Tie,tie,,notation,TIES SLURS AND SPANNERS,two-notes,Always enabled in markup; no central command-context contract,None,engine.addTie(),Creates one semantic tie between adjacent notes of equal pitch in one lane,One Composer engine commit; tested undo/redo where applicable,Score mutat",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/CONTROL-ENGINE-TRACEABILITY.csv",
+      "line": 100,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "data-command:tripletSelected,Triplet,tripletSelected,,notation,NOTE ENTRY,selection,Always enabled in markup; no central command-context contract,None,\"engine.setTuplet(3, 2)\",Retimes exactly three selected rhythmic positions into one semantic 3:2 tuplet; chord tones share an onset,One Composer engi",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "validation/BUILD43-VALIDATION-SUMMARY.json",
+      "line": 3,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "  \"version\": \"1.2.3\",",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/BUILD43-VALIDATION-SUMMARY.json",
+      "line": 5,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "  \"buildVersion\": \"1.2.3.43\",",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-viewport-matrix.json",
+      "line": 590,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      \"screenshot\": \"build43-viewport-1366x768-1x.png\",",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-viewport-matrix.json",
+      "line": 1175,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      \"screenshot\": \"build43-viewport-1366x768-1_25x.png\",",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-viewport-matrix.json",
+      "line": 1760,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      \"screenshot\": \"build43-viewport-1920x1080-1x.png\",",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-viewport-matrix.json",
+      "line": 2345,
+      "patterns": [
+        "Build43"
+      ],
+      "text": "      \"screenshot\": \"build43-viewport-1920x1080-1_5x.png\",",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 validate:full",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 6,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 validate",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 10,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 lint",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 15,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 test",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2183,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 performance",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2194,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 preview",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2197,
+      "patterns": [
+        "Build43",
+        "1.2.3"
+      ],
+      "text": "Built /mnt/data/Airmonlink-Composer-1.2.3-Build43-Work/Airmonlink-Composer-1.2.3-Build43/Airmonlink-Composer-3-Preview.html",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2199,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 browser-smoke",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2203,
+      "patterns": [
+        "Build43",
+        "1.2.3"
+      ],
+      "text": "Screenshot: /mnt/data/Airmonlink-Composer-1.2.3-Build43-Work/Airmonlink-Composer-1.2.3-Build43/validation/composer3-browser.png",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2204,
+      "patterns": [
+        "Build43",
+        "1.2.3"
+      ],
+      "text": "Sol-fa screenshot: /mnt/data/Airmonlink-Composer-1.2.3-Build43-Work/Airmonlink-Composer-1.2.3-Build43/validation/composer3-solfa.png",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2205,
+      "patterns": [
+        "Build43",
+        "1.2.3"
+      ],
+      "text": "PDF: /mnt/data/Airmonlink-Composer-1.2.3-Build43-Work/Airmonlink-Composer-1.2.3-Build43/validation/composer3-print.pdf",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "validation/build43-full-validation.log",
+      "line": 2207,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "> airmonlink-composer@1.2.3 viewport-matrix",
+      "classification": "INTENTIONAL HISTORICAL EVIDENCE"
+    },
+    {
+      "file": "test/build50-completion-contract.test.js",
+      "line": 38,
+      "patterns": [
+        "Build43",
+        "old install dir"
+      ],
+      "text": "  assert.doesNotMatch(workflow, /Airmonlink-Composer-1\\.2\\.3-Build43|AirmonlinkComposerBuild43|1\\.2\\.3\\.43/);",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/development/CHECKPOINT-MANIFEST.json",
+      "line": 3,
+      "patterns": [
+        "1.2.3"
+      ],
+      "text": "  \"version\": \"1.2.3\",",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    },
+    {
+      "file": "docs/development/CHECKPOINT-MANIFEST.json",
+      "line": 5,
+      "patterns": [
+        "Build43",
+        "1.2.3"
+      ],
+      "text": "  \"checkpoint\": \"Airmonlink-Composer-1.2.3-Build43\",",
+      "classification": "REVIEWED HISTORICAL OR NON-ACTIVE REFERENCE"
+    }
+  ],
+  "activeFilesAudited": [
+    "package.json",
+    "package-lock.json",
+    "release-metadata.json",
+    ".github/workflows/windows-build.yml",
+    "scripts/release-env.js",
+    "scripts/version-consistency.js",
+    "scripts/workflow-yaml-check.js",
+    "scripts/build50-browser-validation.js",
+    "src/composer3/index.html",
+    "src/composer3/main.js"
+  ],
+  "patterns": [
+    "Build43",
+    "build43",
+    "BUILD43",
+    "1.2.3",
+    "1.2.3.43",
+    "old Build 43 filenames",
+    "AirmonlinkComposerBuild43"
+  ],
+  "note": "Historical documents, regression labels and validation evidence are retained; no active workflow, packaging, verification, smoke-test or upload path uses Build 43."
+}

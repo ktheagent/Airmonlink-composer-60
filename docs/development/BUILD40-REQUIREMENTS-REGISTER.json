@@ -1,0 +1,239 @@
+{
+  "version": "1.2.0",
+  "build": 40,
+  "generatedAt": "2026-07-27T14:46:16.523422+00:00",
+  "githubEmbargo": "ACTIVE",
+  "projectStatus": "IN PROGRESS \u2014 NOT FINAL",
+  "counts": {
+    "VERIFIED COMPLETE": 16,
+    "IMPLEMENTED BUT NOT VERIFIED": 4,
+    "PARTIALLY IMPLEMENTED": 2,
+    "NOT IMPLEMENTED": 0,
+    "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION": 2
+  },
+  "requirements": [
+    {
+      "id": "ARCH-01",
+      "title": "One authoritative semantic score model across staff, Sol-fa, lyrics, playback, MIDI, parts and interchange",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "332/332 automated tests",
+        "Build 40 SATB, piano, ensemble and Sol-fa scenarios"
+      ]
+    },
+    {
+      "id": "ARCH-02",
+      "title": "Direct Composer 3 engine API without hidden legacy UI dependency",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 40 source architecture audit",
+        "Restricted renderer tests"
+      ]
+    },
+    {
+      "id": "WORK-31",
+      "title": "Build 31 window, zoom, panels, multi-page, print preview, save and reopen regressions",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "46/46 browser checks",
+        "36/36 viewport checks across four scenarios"
+      ]
+    },
+    {
+      "id": "EDIT-32",
+      "title": "Professional note, chord, rest, tuplet, selection and four-layer editing",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 32 tests retained in 332-test suite"
+      ]
+    },
+    {
+      "id": "NOTATE-33",
+      "title": "Notation semantics, meter, accidentals, spanners, repeats and navigation",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 33 tests retained in 332-test suite"
+      ]
+    },
+    {
+      "id": "CHOIR-34",
+      "title": "Tonic Sol-fa, lyrics, SATB ranges and synchronized staff/Sol-fa semantics",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 34 and Build 40 Sol-fa/SATB tests"
+      ]
+    },
+    {
+      "id": "PARTS-35",
+      "title": "Linked parts, cues, instrument ranges and engraving overrides",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 35 and Build 40 ensemble tests"
+      ]
+    },
+    {
+      "id": "AUDIO-36",
+      "title": "Mixer, practice presets, MIDI quantization, deterministic plans and PCM WAV rendering",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 36 tests",
+        "Build 40 SATB WAV scenario"
+      ]
+    },
+    {
+      "id": "COMPOSE-37",
+      "title": "Premium Composition Hub with previewable assisted transformations and analysis",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 37 tests",
+        "Composition Hub browser/source validation"
+      ]
+    },
+    {
+      "id": "OMR-37",
+      "title": "Bundled production OMR recognition engine",
+      "status": "PARTIALLY IMPLEMENTED",
+      "evidence": [
+        "Confidence-gated review/import contract"
+      ],
+      "blockers": [
+        "No bundled recognition model or representative production fixture corpus"
+      ]
+    },
+    {
+      "id": "TRANSCRIBE-37",
+      "title": "Bundled production audio transcription engine",
+      "status": "PARTIALLY IMPLEMENTED",
+      "evidence": [
+        "Confidence-gated review/import contract"
+      ],
+      "blockers": [
+        "No bundled transcription model or representative production audio corpus"
+      ]
+    },
+    {
+      "id": "FILES-38",
+      "title": "Integrity, migrations, atomic save, autosave and recovery planning",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 38 file-failure and migration tests"
+      ]
+    },
+    {
+      "id": "PUBLISH-38",
+      "title": "Transactional score/part publishing plans, metadata, watermark and rollback",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 38 publishing tests"
+      ]
+    },
+    {
+      "id": "PLUGIN-38",
+      "title": "Permission-scoped plugin API with isolation, logging and safe uninstall",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 38 plugin tests"
+      ]
+    },
+    {
+      "id": "A11Y-39",
+      "title": "Keyboard names, focus, high contrast, scaling, reduced motion and accessible notifications",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "Source assertions and automated accessibility-oriented tests"
+      ],
+      "blockers": [
+        "Not manually tested with Windows Narrator, NVDA or keyboard-only user session"
+      ]
+    },
+    {
+      "id": "SEC-39",
+      "title": "Restricted Electron renderer, narrow preload, CSP, path and URL validation",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 39 and Build 40 security source audits"
+      ]
+    },
+    {
+      "id": "PERF-39",
+      "title": "Performance budgets and small/medium/large semantic workload checks",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "6/6 performance checks passed in three Build 40 cycles"
+      ]
+    },
+    {
+      "id": "UI-40",
+      "title": "Five-zone desktop, Setup/Write/Engrave/Play/Publish modes, Start Centre and Composition Hub",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 40 source tests",
+        "46/46 browser checks",
+        "visual screenshots"
+      ]
+    },
+    {
+      "id": "E2E-40",
+      "title": "Automated SATB, piano, ensemble and Tonic Sol-fa end-to-end scenarios",
+      "status": "VERIFIED COMPLETE",
+      "evidence": [
+        "Build 40 tests 326-329"
+      ]
+    },
+    {
+      "id": "CLEAN-DEP",
+      "title": "Clean dependency restore from lockfile",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "Lockfile and package metadata consistent"
+      ],
+      "blockers": [
+        "Offline npm cache lacks yocto-queue; npm ci --offline failed with ENOTCACHED"
+      ]
+    },
+    {
+      "id": "WIN-PACK",
+      "title": "Windows x64 NSIS and Portable production packaging",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "evidence": [
+        "electron-builder workflow and artifact names configured"
+      ],
+      "blockers": [
+        "GitHub embargo prevents Windows Actions",
+        "Local Linux environment has no Wine, NSIS or electron-builder installation"
+      ]
+    },
+    {
+      "id": "WIN-RUN",
+      "title": "Windows install, launch, upgrade, association and uninstall validation",
+      "status": "BLOCKED BY USER-SUPPLIED ACCESS OR INFORMATION",
+      "evidence": [],
+      "blockers": [
+        "No Windows executable exists for Build 40",
+        "No Windows runner authorized during embargo"
+      ]
+    },
+    {
+      "id": "HW-MIDI",
+      "title": "Physical MIDI and audio-device verification",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "Automated MIDI/audio semantics pass"
+      ],
+      "blockers": [
+        "No physical MIDI/audio device was used"
+      ]
+    },
+    {
+      "id": "HW-PRINT",
+      "title": "Physical printer and Windows print-driver verification",
+      "status": "IMPLEMENTED BUT NOT VERIFIED",
+      "evidence": [
+        "PDF generation and rendered-page check pass"
+      ],
+      "blockers": [
+        "No physical printer or Windows print driver was used"
+      ]
+    }
+  ]
+}
