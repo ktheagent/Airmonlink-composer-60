@@ -25,7 +25,7 @@
     "audit:release": "node scripts/release-control-audit.js",
     "gate:build59": "node test/build59-release-quality.test.js",
     "gate:build60": "node --test test/build60-integrated-release-candidate.test.js",
-    "verify:packaged": "node scripts/verify-packaged-build.js"
+    "verify:packaged": "node scripts/run-packaged-verifier.js"
   },
   "devDependencies": {
     "electron": "^37.2.3",
