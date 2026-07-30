@@ -1,0 +1,285 @@
+name: Build Windows Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-windows-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  npm_config_registry: https://registry.npmjs.org/
+
+jobs:
+  validate:
+    name: Validate source and browser workflow
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.12.0'
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Export authoritative release metadata
+        id: metadata
+        run: node scripts/release-env.js --github-env --github-output --quiet
+
+      - name: Version consistency gate
+        run: npm run version:check
+
+      - name: Validate workflow YAML
+        run: npm run workflow:check
+
+      - name: Lint JavaScript
+        run: npm run lint
+
+      - name: Run source tests
+        run: npm test
+
+      - name: Run release command/control audit
+        run: npm run audit:release
+
+      - name: Run performance gates
+        run: npm run performance
+
+      - name: Build browser preview
+        run: npm run preview
+
+      - name: Run browser interaction validation
+        run: npm run browser-smoke
+
+      - name: Run viewport matrix
+        run: npm run viewport-matrix
+
+      - name: Upload Linux validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.VALIDATION_ARTIFACT }}-Linux-${{ github.run_number }}
+          path: validation/**
+          if-no-files-found: warn
+          retention-days: 14
+
+  build-windows:
+    name: Compile and smoke-test Windows x64
+    needs: validate
+    runs-on: windows-latest
+    timeout-minutes: 55
+    env:
+      CSC_IDENTITY_AUTO_DISCOVERY: "false"
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.12.0'
+          cache: npm
+
+      - name: Install locked dependencies
+        shell: pwsh
+        run: npm ci --no-audit --no-fund
+
+      - name: Export authoritative release metadata
+        id: metadata
+        shell: pwsh
+        run: node scripts/release-env.js --github-env --github-output --quiet
+
+      - name: Version consistency gate on Windows
+        shell: pwsh
+        run: npm run version:check
+
+      - name: Validate workflow YAML on Windows
+        shell: pwsh
+        run: npm run workflow:check
+
+      - name: Lint JavaScript on Windows
+        shell: pwsh
+        run: npm run lint
+
+      - name: Run source tests on Windows
+        shell: pwsh
+        run: npm test
+
+      - name: Run release command/control audit on Windows
+        shell: pwsh
+        run: npm run audit:release
+
+      - name: Run performance gates on Windows
+        shell: pwsh
+        run: npm run performance
+
+      - name: Build browser preview on Windows
+        shell: pwsh
+        run: npm run preview
+
+      - name: Record Windows browser-validation boundary
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path validation | Out-Null
+          [ordered]@{
+            status = "PASS"
+            rationale = "Browser interaction and viewport validation passed in the required Ubuntu validation job."
+            windowsBoundary = "Windows performs source tests, packaging, PE checks, installation and executable startup."
+          } | ConvertTo-Json -Depth 4 | Set-Content validation/WINDOWS-BROWSER-VALIDATION-BOUNDARY.json
+
+      - name: Build Setup and Portable executables
+        shell: pwsh
+        run: npm run dist:win
+
+      - name: Verify Windows release files
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $installer = Join-Path "release" $env:SETUP_FILE
+          $portable = Join-Path "release" $env:PORTABLE_FILE
+          foreach ($file in @($installer, $portable)) {
+            if (-not (Test-Path -LiteralPath $file)) { throw "Missing expected Build $env:BUILD_NUMBER artifact: $file" }
+            if ((Get-Item -LiteralPath $file).Length -lt 1MB) { throw "Artifact is unexpectedly small: $file" }
+            $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path -LiteralPath $file))
+            if ($bytes[0] -ne 0x4D -or $bytes[1] -ne 0x5A) { throw "Artifact is not a Windows PE file: $file" }
+          }
+          $installerInfo = (Get-Item -LiteralPath $installer).VersionInfo
+          $portableInfo = (Get-Item -LiteralPath $portable).VersionInfo
+          foreach ($item in @($installerInfo, $portableInfo)) {
+            if ($item.ProductVersion -notlike "$env:BUILD_VERSION*") {
+              throw "PE ProductVersion '$($item.ProductVersion)' does not match $env:BUILD_VERSION."
+            }
+          }
+          [ordered]@{
+            appVersion = $env:APP_VERSION
+            buildNumber = [int]$env:BUILD_NUMBER
+            buildVersion = $env:BUILD_VERSION
+            installer = @{
+              filename = $env:SETUP_FILE
+              path = $installer
+              size = (Get-Item -LiteralPath $installer).Length
+              product = $installerInfo.ProductName
+              version = $installerInfo.ProductVersion
+            }
+            portable = @{
+              filename = $env:PORTABLE_FILE
+              path = $portable
+              size = (Get-Item -LiteralPath $portable).Length
+              product = $portableInfo.ProductName
+              version = $portableInfo.ProductVersion
+            }
+          } | ConvertTo-Json -Depth 5 | Set-Content release/WINDOWS-ARTIFACT-VERIFICATION.json
+
+      - name: Silent install and bounded startup smoke
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $installer = (Resolve-Path -LiteralPath (Join-Path "release" $env:SETUP_FILE)).Path
+          $portable = (Resolve-Path -LiteralPath (Join-Path "release" $env:PORTABLE_FILE)).Path
+          $installDir = Join-Path $env:RUNNER_TEMP $env:INSTALL_DIRECTORY
+          if (Test-Path -LiteralPath $installDir) {
+            Remove-Item -LiteralPath $installDir -Recurse -Force
+          }
+
+          $install = Start-Process -FilePath $installer -ArgumentList @("/S", "/D=$installDir") -PassThru -Wait
+          if ($install.ExitCode -ne 0) { throw "Silent installer returned exit code $($install.ExitCode)." }
+
+          $installedExe = Get-ChildItem -LiteralPath $installDir -Filter "*.exe" -Recurse -File |
+            Where-Object { $_.Name -notmatch '(?i)^uninstall' } |
+            Sort-Object Length -Descending |
+            Select-Object -First 1
+          if (-not $installedExe) { throw "Installed application executable was not found." }
+
+          function Test-BoundedLaunch([string]$Path, [string]$Label) {
+            $process = Start-Process -FilePath $Path -ArgumentList "--build-smoke-test" -PassThru
+            Start-Sleep -Seconds 8
+            if ($process.HasExited) { throw "$Label exited during startup with code $($process.ExitCode)." }
+            Stop-Process -Id $process.Id -Force
+            Wait-Process -Id $process.Id -ErrorAction SilentlyContinue
+          }
+
+          Test-BoundedLaunch $installedExe.FullName "Installed application"
+          Test-BoundedLaunch $portable "Portable application"
+
+          $uninstaller = Get-ChildItem -LiteralPath $installDir -Filter "Uninstall*.exe" -Recurse -File |
+            Select-Object -First 1
+          $uninstallExitCode = $null
+          if ($uninstaller) {
+            $uninstall = Start-Process -FilePath $uninstaller.FullName -ArgumentList "/S" -PassThru -Wait
+            $uninstallExitCode = $uninstall.ExitCode
+            if ($uninstall.ExitCode -ne 0) { throw "Silent uninstaller returned exit code $($uninstall.ExitCode)." }
+          }
+
+          [ordered]@{
+            buildVersion = $env:BUILD_VERSION
+            installerExitCode = $install.ExitCode
+            installedExecutable = $installedExe.FullName
+            installedStartup = "passed"
+            portableExecutable = $portable
+            portableStartup = "passed"
+            uninstallAttempted = [bool]$uninstaller
+            uninstallExitCode = $uninstallExitCode
+          } | ConvertTo-Json -Depth 4 | Set-Content release/WINDOWS-SMOKE-RESULT.json
+
+      - name: Generate SHA-256 checksums
+        shell: pwsh
+        run: |
+          Remove-Item -LiteralPath release/SHA256SUMS.txt -ErrorAction SilentlyContinue
+          foreach ($name in @($env:SETUP_FILE, $env:PORTABLE_FILE, "WINDOWS-ARTIFACT-VERIFICATION.json", "WINDOWS-SMOKE-RESULT.json")) {
+            $file = Join-Path "release" $name
+            if (-not (Test-Path -LiteralPath $file)) { throw "Checksum input missing: $file" }
+            $hash = (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$hash  $name" | Add-Content release/SHA256SUMS.txt
+          }
+
+      - name: Write Build Summary
+        shell: pwsh
+        run: |
+          @"
+          ## Airmonlink Composer Windows Build
+          - Version: $env:APP_VERSION
+          - Build: $env:BUILD_NUMBER
+          - Build version: $env:BUILD_VERSION
+          - Setup: $env:SETUP_FILE
+          - Portable: $env:PORTABLE_FILE
+          - Installer verification: passed
+          - Portable verification: passed
+          "@ | Add-Content $env:GITHUB_STEP_SUMMARY
+
+      - name: Upload Windows validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.VALIDATION_ARTIFACT }}-${{ github.run_number }}
+          path: |
+            validation/**
+            release/WINDOWS-ARTIFACT-VERIFICATION.json
+            release/WINDOWS-SMOKE-RESULT.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload Windows release
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.RELEASE_ARTIFACT }}-${{ github.run_number }}
+          path: |
+            release/${{ steps.metadata.outputs.SETUP_FILE }}
+            release/${{ steps.metadata.outputs.PORTABLE_FILE }}
+            release/SHA256SUMS.txt
+            release/WINDOWS-ARTIFACT-VERIFICATION.json
+            release/WINDOWS-SMOKE-RESULT.json
+          if-no-files-found: error
+          retention-days: 30
