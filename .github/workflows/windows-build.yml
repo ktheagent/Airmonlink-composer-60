@@ -159,8 +159,11 @@ jobs:
           $installerInfo = (Get-Item -LiteralPath $installer).VersionInfo
           $portableInfo = (Get-Item -LiteralPath $portable).VersionInfo
           foreach ($item in @($installerInfo, $portableInfo)) {
-            if ($item.ProductVersion -notlike "$env:BUILD_VERSION*") {
-              throw "PE ProductVersion '$($item.ProductVersion)' does not match $env:BUILD_VERSION."
+            if ($item.ProductVersion -notlike "$env:APP_VERSION*") {
+              throw "PE ProductVersion '$($item.ProductVersion)' does not match application version $env:APP_VERSION."
+            }
+            if ($item.FileVersion -notlike "$env:BUILD_VERSION*") {
+              throw "PE FileVersion '$($item.FileVersion)' does not match complete build version $env:BUILD_VERSION."
             }
           }
           [ordered]@{
