@@ -38,12 +38,44 @@ function sha256(buffer) {
   return crypto.createHash('sha256').update(buffer).digest('hex');
 }
 
-function readPacked(archivePath, relativePath) {
-  try {
-    return asar.extractFile(archivePath, relativePath);
-  } catch (error) {
-    throw new Error(`Missing packaged payload file ${relativePath}: ${error.message}`);
+function normalizeEntry(value) {
+  return String(value).replace(/\\/g, '/').replace(/^\/+/, '');
+}
+
+function readPacked(archivePath, relativePath, entries) {
+  const requested = normalizeEntry(relativePath);
+  const candidates = [
+    requested,
+    requested.replace(/\//g, path.sep),
+    `/${requested}`,
+    `\\${requested.replace(/\//g, '\\')}`
+  ];
+
+  for (const candidate of candidates) {
+    try {
+      return asar.extractFile(archivePath, candidate);
+    } catch (_) {}
   }
+
+  const matched = entries.find(entry => normalizeEntry(entry) === requested);
+  if (matched) {
+    for (const candidate of [matched, normalizeEntry(matched), normalizeEntry(matched).replace(/\//g, path.sep)]) {
+      try {
+        return asar.extractFile(archivePath, candidate);
+      } catch (_) {}
+    }
+  }
+
+  const basename = path.posix.basename(requested).toLowerCase();
+  const nearby = entries
+    .map(normalizeEntry)
+    .filter(entry => path.posix.basename(entry).toLowerCase() === basename)
+    .slice(0, 10);
+
+  throw new Error(
+    `Missing packaged payload file ${relativePath}` +
+    (nearby.length ? `; nearby archive entries: ${JSON.stringify(nearby)}` : '')
+  );
 }
 
 function assertEqual(actual, expected, label) {
@@ -60,15 +92,24 @@ function assertIdentity(metadata, label) {
 
 function main() {
   const root = path.resolve(__dirname, '..');
-  const archivePath = path.resolve(process.argv[2] || path.join(root, 'release/win-unpacked/resources/app.asar'));
+  const archivePath = path.resolve(
+    process.argv[2] || path.join(root, 'release/win-unpacked/resources/app.asar')
+  );
 
   if (!fs.existsSync(archivePath)) {
     throw new Error(`Packaged app.asar was not found: ${archivePath}`);
   }
 
-  const sourceMetadata = JSON.parse(fs.readFileSync(path.join(root, 'release-metadata.json'), 'utf8'));
-  const packedMetadata = JSON.parse(readPacked(archivePath, 'release-metadata.json').toString('utf8'));
-  const packedPackage = JSON.parse(readPacked(archivePath, 'package.json').toString('utf8'));
+  const entries = asar.listPackage(archivePath);
+  const sourceMetadata = JSON.parse(
+    fs.readFileSync(path.join(root, 'release-metadata.json'), 'utf8')
+  );
+  const packedMetadata = JSON.parse(
+    readPacked(archivePath, 'release-metadata.json', entries).toString('utf8')
+  );
+  const packedPackage = JSON.parse(
+    readPacked(archivePath, 'package.json', entries).toString('utf8')
+  );
 
   assertIdentity(sourceMetadata, 'source release metadata');
   assertIdentity(packedMetadata, 'packaged release metadata');
@@ -84,11 +125,11 @@ function main() {
     }
 
     const sourceBuffer = fs.readFileSync(sourcePath);
-    const packedBuffer = readPacked(archivePath, relativePath);
+    const packedBuffer = readPacked(archivePath, relativePath, entries);
     const sourceSha256 = sha256(sourceBuffer);
     const packedSha256 = sha256(packedBuffer);
-
     assertEqual(packedSha256, sourceSha256, `packaged hash for ${relativePath}`);
+
     verifiedFiles.push({
       path: relativePath,
       bytes: packedBuffer.length,
@@ -96,7 +137,7 @@ function main() {
     });
   }
 
-  const packedIndex = readPacked(archivePath, 'src/composer3/index.html').toString('utf8');
+  const packedIndex = readPacked(archivePath, 'src/composer3/index.html', entries).toString('utf8');
   if (!packedIndex.includes(`${EXPECTED.appVersion} · Build ${EXPECTED.buildNumber}`)) {
     throw new Error('Packaged interface does not contain the visible Build 60 identity.');
   }
@@ -127,7 +168,10 @@ function main() {
     verifiedFiles
   };
 
-  const outputPath = path.join(root, 'release/WINDOWS-PACKAGED-PAYLOAD-VERIFICATION.json');
+  const outputPath = path.join(
+    root,
+    'release/WINDOWS-PACKAGED-PAYLOAD-VERIFICATION.json'
+  );
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`, 'utf8');
   console.log(JSON.stringify(result, null, 2));
@@ -136,6 +180,8 @@ function main() {
 try {
   main();
 } catch (error) {
-  console.error(`Packaged Build 60 payload verification FAILED: ${error.stack || error.message}`);
+  console.error(
+    `Packaged Build 60 payload verification FAILED: ${error.stack || error.message}`
+  );
   process.exit(1);
 }
