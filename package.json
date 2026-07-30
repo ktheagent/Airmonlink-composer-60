@@ -16,7 +16,7 @@
     "audit:stale": "node scripts/version-consistency.js --stale-only",
     "validate": "npm run version:check && npm run workflow:check && npm run lint && npm test && npm run audit:release",
     "pack": "electron-builder --dir",
-    "dist:win": "electron-builder --win nsis portable --x64 --publish never",
+    "dist:win": "electron-builder --win nsis portable --x64 --publish never && npm run verify:packaged",
     "preview": "node scripts/build-preview.js",
     "browser-smoke": "node scripts/browser-validation.js browser",
     "viewport-matrix": "node scripts/browser-validation.js viewport",
@@ -24,7 +24,8 @@
     "validate:full": "npm run validate && npm run performance && npm run preview && npm run browser-smoke && npm run viewport-matrix",
     "audit:release": "node scripts/release-control-audit.js",
     "gate:build59": "node test/build59-release-quality.test.js",
-    "gate:build60": "node --test test/build60-integrated-release-candidate.test.js"
+    "gate:build60": "node --test test/build60-integrated-release-candidate.test.js",
+    "verify:packaged": "node scripts/verify-packaged-build.js"
   },
   "devDependencies": {
     "electron": "^37.2.3",
