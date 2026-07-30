@@ -7,6 +7,7 @@ const { spawn } = require('node:child_process');
 const root = path.resolve(__dirname, '..');
 const metadata = JSON.parse(fs.readFileSync(path.join(root, 'release-metadata.json'), 'utf8'));
 const mode = process.argv[2];
+
 const configs = {
   browser: {
     script: path.join(__dirname, 'browser-smoke.js'),
@@ -23,8 +24,8 @@ if (!configs[mode]) {
   process.exit(2);
 }
 
-const timeoutMs = Number(process.env.AIRMON_BROWSER_TIMEOUT_MS || 14 * 60 * 1000);
 const config = configs[mode];
+const timeoutMs = Number(process.env.AIRMON_BROWSER_TIMEOUT_MS || 14 * 60 * 1000);
 
 function annotationText(value) {
   return String(value)
@@ -60,7 +61,10 @@ function reportFailure(prefix) {
   } else {
     detail = `${prefix} | validation report was not created`;
   }
-  console.error(`::error title=Build ${metadata.buildNumber} ${mode} validation failed::${annotationText(detail)}`);
+
+  console.error(
+    `::error title=Build ${metadata.buildNumber} ${mode} validation failed::${annotationText(detail)}`
+  );
   return detail;
 }
 
@@ -70,7 +74,9 @@ function terminate(child, signal) {
     if (process.platform === 'win32') child.kill(signal);
     else process.kill(-child.pid, signal);
   } catch (_) {
-    try { child.kill(signal); } catch (_) {}
+    try {
+      child.kill(signal);
+    } catch (_) {}
   }
 }
 
@@ -78,10 +84,12 @@ function validateReport() {
   if (!fs.existsSync(config.report)) {
     throw new Error(`${mode} validation did not create ${path.relative(root, config.report)}.`);
   }
+
   const report = JSON.parse(fs.readFileSync(config.report, 'utf8'));
   if (report.status !== 'PASS') {
     throw new Error(`${mode} validation report did not pass: ${JSON.stringify(report)}`);
   }
+
   if (mode === 'browser') {
     if (
       !Array.isArray(report.checks) ||
@@ -97,6 +105,7 @@ function validateReport() {
   ) {
     throw new Error('Viewport report does not contain four fully passing scenarios.');
   }
+
   return report;
 }
 
@@ -130,7 +139,7 @@ async function main() {
   let result;
   try {
     result = await new Promise((resolve, reject) => {
-      child.once('eror', reject);
+      child.once('error', reject);
       child.once('exit', (code, signal) => resolve({ code, signal }));
     });
   } finally {
@@ -140,20 +149,26 @@ async function main() {
   if (timedOut) {
     throw new Error(reportFailure(`${mode} validation exceeded ${timeoutMs} ms.`));
   }
+
   if (result.code !== 0) {
-    throw new Error(reportFailure(
-      `${mode} validation exited with code ${result.code}${result.signal ? ` (${result.signal})` : ''.`
-    ));
+    const signalText = result.signal ? ` (${result.signal})` : '';
+    throw new Error(
+      reportFailure(`${mode} validation exited with code ${result.code}${signalText}.`)
+    );
   }
 
   const report = validateReport();
   const count = mode === 'browser' ? report.checks.length : report.passed;
-  console.log(`Build ${metadata.buildNumber} ${mode} supervisor confirmed PASS (${count} checks).`);
+  console.log(
+    `Build ${metadata.buildNumber} ${mode} supervisor confirmed PASS (${count} checks).`
+  );
 }
 
 main().catch(error => {
-  if (!String(error.message).includes('validation exited') &&
-      !String(error.message).includes('validation exceeded')) {
+  if (
+    !String(error.message).includes('validation exited') &&
+    !String(error.message).includes('validation exceeded')
+  ) {
     reportFailure(error.stack || String(error));
   }
   console.error(error.stack || String(error));
