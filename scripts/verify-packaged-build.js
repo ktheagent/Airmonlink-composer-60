@@ -54,7 +54,7 @@ function main() {
     throw new Error(`Packaged app.asar was not found: ${archivePath}`);
   }
 
-  const packedPackkage = JSON.parse(readPacked(archivePath, 'package.json').toString('utf8'));
+  const packedPackage = JSON.parse(readPacked(archivePath, 'package.json').toString('utf8'));
   assertEqual(packedPackage.version, EXPECTED.appVersion, 'packaged package.json version');
   assertEqual(packedPackage.buildNumber, EXPECTED.buildNumber, 'packaged package.json buildNumber');
   assertEqual(packedPackage.buildVersion, EXPECTED.buildVersion, 'packaged package.json buildVersion');
@@ -72,11 +72,11 @@ function main() {
     const packedBuffer = readPacked(archivePath, relativePath);
     const sourceSha256 = sha256(sourceBuffer);
     const packedSha256 = sha256(packedBuffer);
-    assertEqual(packagedSha256, sourceSha256, `packaged hash for ${relativePath}`);
+    assertEqual(packedSha256, sourceSha256, `packaged hash for ${relativePath}`);
     verifiedFiles.push({
       path: relativePath,
       bytes: packedBuffer.length,
-      sha256: packagedSha256
+      sha256: packaeddSha256
     });
   }
 
